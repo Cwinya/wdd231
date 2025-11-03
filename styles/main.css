@@ -117,10 +117,16 @@ h2 {
     box-shadow: 2px 3px 5px black;
     border-radius: 5px;
 }
-.courses-title button{
+.courses-title a{
     width: 100%;
     height: auto;
     border-radius: 5px;
+    text-decoration: dotted;
+    border: 1px solid black;
+    padding: 1rem;
+}
+#cse-courses {
+    margin: 0 5px;
 }
 .courses {
     text-align: center;
