@@ -1,11 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231</title>
-</head>
-<body>
-    <h1>WDD 231 - Cwinya Moses</h1>
-</body>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WDD 231</title>
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <script src="scripts/main.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <img src="images/buildings-fill.svg" alt="Business" width="512" height="512">
+            <span>Cwinya Moses</span>
+            <button id="ham-btn" class="hamburger"></button>
+        </header>
+        <nav class="navigation" id="nav-bar">
+            <ul>
+            <li class="current"><a href="">Home</a></li>
+            <li><a href="">Chamber Project</a></li>
+            <li><a href="">Final Project</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Home</h1>
+            <div class="container">
+                <section class="std-info">
+                <h2>About Me</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis iste sit sed repellendus at, dicta, sapiente adipisci neque eum alias hic commodi optio eveniet ipsum. Itaque non, culpa dolorem commodi accusamus veniam perspiciatis perferendis optio magnam molestiae laboriosam. Quasi deserunt, porro voluptas, non minima vitae quas tempore alias, beatae officia modi. Iste id animi neque doloribus! Hic ducimus tempore quam, rem doloribus assumenda maxime repellendus alias totam. Adipisci necessitatibus alias enim neque maxime optio libero fuga reprehenderit! Delectus assumenda culpa ipsum inventore non eius odit tenetur quia esse quaerat? Blanditiis ad suscipit officiis temporibus modi omnis voluptatem cum labore? Repudiandae, et nulla vel labore quos tenetur repellat odit, minima veritatis molestiae in quibusdam eius. Labore placeat est commodi? Qui temporibus eius dolores, saepe sint eveniet a suscipit exercitationem ratione voluptatem in nisi eaque aspernatur. Culpa minus quae quisquam quaerat enim.</p>
+                </section>
+
+                <section class="std-info">
+                <h2>Student Photo</h2>
+                <img src="images/Moses.JPG" alt="Cwinya Moses">
+                </section>
+            </div>
+
+            <section class="courses-section">
+                <h2>Web and Computer Programming</h2>
+
+                <div class="courses-title">
+                    <a href="#" id="all-courses"><button>All Courses</button></a>
+                    <a href="#" id="cse-courses"><button>CSE Courses</button></a>
+                    <a href="#" id="wdd-courses"><button>WDD Courses</button></a>
+                    </div>
+                    <p id="total-credits">Total Credits: 0</p>
+                </div>
+
+                <div class="courses">
+                </div>
+            </section> 
+        </main>
+        <footer>
+            <div class="socials">
+                <a href="" target="_blank"><img src="images/github.svg" alt="Github" width="20" height="20"></a>
+                <a href="" target="_blank"><img src="images/twitter-x.svg" alt="X" width="20" height="20"></a>
+                <a href="" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="20" height="20"></a>
+                <a href="" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn" width="20" height="20"></a>
+            </div>
+            <div class="last">
+                <span id="current-year">&copy; 2025 &#128507; Cwinya Moses &#128507; Jinja, Uganda</span>
+                <p id="lastModified"></p>
+            </div>
+        </footer>
+    </body>
 </html>
