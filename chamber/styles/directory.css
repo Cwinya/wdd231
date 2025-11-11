@@ -89,13 +89,6 @@ h1 {
 .hamburger.show::before {
     content: "\00D7";
 }
-
-.companies section {
-    border-radius: 6px;
-    box-shadow: 0 0 20px #020C18;
-    cursor: pointer;
-	margin: 1rem;
-}
 main {
 	margin: 0 auto;
 	padding: 0.5rem;
@@ -111,7 +104,10 @@ main {
 	text-align: center;
 }
 .companies section {
-	margin-bottom: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 0 20px #020C18;
+    cursor: pointer;
+	margin: 1rem;
 }
 .companies img {
 	width: 100%;
