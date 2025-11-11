@@ -138,6 +138,7 @@ footer {
 	grid-template-columns: 1fr;
 	grid-gap: 2rem;
 	background-color: #eee;
+	color: #000000;
     border-radius: 22px;
 	margin-top: 2rem;
 }
@@ -165,10 +166,10 @@ footer section {
 	height: 22px;
 }
 .socials a:hover {
-    background-color: #ddd;
+    background-color: #EEEEEE;
 }
 .last {
-    background-color: #eee;
+    background-color: #EEEEEE;
     border-radius: 22px;
     padding: 1rem;
 }
