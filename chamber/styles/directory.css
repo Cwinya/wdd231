@@ -115,17 +115,15 @@ main {
 }
 .companies img {
 	width: 100%;
-	height: auto;
+	height: 300px;
+	padding: 1rem;
 }
-
-
 .buttons {
 	margin: 1rem auto;
 	padding: 0.5rem;
 	background-color: #333;
 	text-align: center;
 }
-
 button {
 	padding: 0.5rem 1rem;
 	font-weight: 700;
