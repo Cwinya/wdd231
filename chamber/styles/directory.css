@@ -139,9 +139,7 @@ button {
 .list section {
 	background-color: #7fffd4;
 	box-shadow: 0 0 10px #020C18;
-
-};
-
+}
 footer {
 	display: grid;
 	grid-template-columns: 1fr;
