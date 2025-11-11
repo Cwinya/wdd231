@@ -37,8 +37,8 @@
     text-overflow: ellipsis; /* Adds '...' */
 }
 h1 {
-	background-color: #333;
-	color: #eee;
+	background-color: #ACE2AC;
+	color: #000000;
 	padding: 1rem;
 	text-align: center;
 }
@@ -118,7 +118,8 @@ main {
 .buttons {
 	margin: 1rem auto;
 	padding: 0.5rem;
-	background-color: #333;
+	background-color: #ACE2AC;
+	color: #000000;
 	text-align: center;
 }
 button {
