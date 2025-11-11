@@ -48,7 +48,7 @@ const displayCompany = (companynames) => {
         let name = document.createElement("h2");
         let number = document.createElement("p");
         let detail = document.createElement("p");
-        let websitelink = document.createElement("p");
+        // let websitelink = document.createElement("p");
 
         image.setAttribute('src', companyname.imageurl);
         image.setAttribute('alt', `image of ${companyname.name}`);
@@ -58,13 +58,13 @@ const displayCompany = (companynames) => {
         name.textContent = `${companyname.name}`;
         number.innerHTML = `${companyname.address}`;
         detail.textContent = `Membership Level: ${levelName}`;
-        websitelink.innerHTML = `${companyname.websiteurl}`;
+        // websitelink.innerHTML = `${companyname.websiteurl}`;
 
         card.appendChild(image);
         card.appendChild(name);
         card.appendChild(number);
         card.appendChild(detail);
-        card.appendChild(websitelink);
+        // card.appendChild(websitelink);
 
         cards.appendChild(card);
     });
