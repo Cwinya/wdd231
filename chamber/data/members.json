@@ -1,0 +1,95 @@
+{
+    "companynames":[
+        {
+            "name":"Nasper",
+            "address":"Cape Town, South Africa",
+            "phonenumber":"+27 (0)21 406 2121",
+            "websiteurl":"https://www.naspers.com/",
+            "imageurl":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Naspers_Media24_building.jpg/250px-Naspers_Media24_building.jpg",
+            "membershiplevel":
+            {
+                "member":1,
+                "silver":2,
+                "gold":3
+            }
+        },
+        {
+            "name":"Sonatrach",
+            "address":"Algiers, Algeria",
+            "phonenumber":"+213 23 48 11 11",
+            "websiteurl":"https://sonatrach.com/en/",
+            "imageurl":"https://resourcegovernance.org/sites/default/files/styles/16_9_deskt/public/assets/images/shutterstock_728510293.jpg?h=70506272&itok=5FSgqPZf",
+            "membershiplevel":
+            {
+                "member":1,
+                "silver":2,
+                "gold":3
+            }
+        },
+        {
+            "name":"MTN Group",
+            "address":"Johannesburg, South Africa",
+            "phonenumber":"+27 (0)11 630 0800",
+            "websiteurl":"https://www.mtn.com/",
+            "imageurl":"https://www.telecomreviewafrica.com/wp-content/uploads/2024/09/MTN_Plans_to_Withdraw_from_Two_West_African_Markets_.jpg",
+            "membershiplevel":
+            {
+                "member":1,
+                "silver":2,
+                "gold":3
+            }
+        },
+        {
+            "name":"Dangote Cement",
+            "address":"Lagos, Nigeria",
+            "phonenumber":"+234 1 271 2711",
+            "websiteurl":"https://dangotecement.com/",
+            "imageurl":"https://estateintel.com/assets-ei/2016/01/dangote-e1491739646767.png",
+            "membershiplevel":
+            {
+                "member":1,
+                "silver":2,
+                "gold":3
+            }
+        },
+        {
+            "name":"Standard Bank Group",
+            "address":"Johannesburg, South Africa",
+            "phonenumber":"+27 11 636 9111",
+            "websiteurl":"https://www.standardbank.com/sbg/standard-bank-group",
+            "imageurl":"https://bunny-wp-pullzone-t9wsb4m84y.b-cdn.net/wp-content/uploads/2022/12/Standard-Bank-pic.jpg",
+            "membershiplevel":
+            {
+                "member":1,
+                "silver":2,
+                "gold":3
+            }
+        },
+        {
+            "name":"FirstRand",
+            "address":"Johannesburg, South Africa",
+            "phonenumber":"+27 11 282 1808",
+            "websiteurl":"https://www.firstrand.co.za/",
+            "imageurl":"https://www.glassdoor.com/imgproxy/x1KG-j88IURwsDoN6fzCmR2pMIZVJ1m0e3eZ9yCwX7A/rs::170:170/aHR0cHM6Ly9tZWRpYS5nbGFzc2Rvb3IuY29tL2xzdDJ4L2Q1LzAwLzM1LzI0L2ZpcnN0cmFuZC1uYW1pYmlhLmpwZz9zaWduYXR1cmU9ZDA3YzhmMWJmOTUwMTMyYmVkNjFkYjg1ZjAxYTFhN2I3MzBjMDA3YTczYzQ2MjZjOTc4ODc1YTUyYWZmYzQ4Yg",
+            "membershiplevel":
+            {
+                "member":1,
+                "silver":2,
+                "gold":3
+            }
+        },
+        {
+            "name":"Sasol",
+            "address":"Johannesburg,South Africa",
+            "phonenumber":"+27 10 344 5000",
+            "websiteurl":"https://www.sasol.com/",
+            "imageurl":"https://sasol.com/sites/default/files/2023-06/sasol_place.jpg",
+            "membershiplevel":
+            {
+                "member":1,
+                "silver":2,
+                "gold":3
+            }
+        }
+    ]
+}

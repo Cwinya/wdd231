@@ -7,13 +7,6 @@ navbtn.addEventListener('click', () => {
     navbar.classList.toggle('show');
 });
 
-// const lastModified = document.querySelector('#lastModified');
-// const today = new Date();
-// lastModified.innerHTML = `Last Modified: ${new Intl.DateTimeFormat(
-//     "en-US",
-//     {dateStyle:"full"}
-// ).format(today)}`;
-
 const lastModifiedDate = document.lastModified;
 console.log("Last Modified;", lastModifiedDate);
 document.getElementById("lastModified").textContent = "Last Modofication: " + lastModifiedDate;

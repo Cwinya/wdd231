@@ -1,0 +1,68 @@
+@media only screen and (min-width: 33rem) {
+    header, main, nav, footer {
+    max-width: 900px;
+    margin: 0 auto;
+    }
+    .companies {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	grid-gap: 5px;
+	justify-content: center;
+	align-items: center;
+    text-align: center;
+    section {
+        margin: 1rem;
+    }
+	img {
+		width: 100%;
+		height: 300px;
+        padding: 1rem;
+	}
+    }
+    header {
+	display: grid;
+	grid-template-columns: 45px 1fr 2fr 45px;
+	gap: 1rem;
+	border: 1px solid #555;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 5px;  
+    }
+    .grid img {
+		width: 180px;
+		height: 180px;
+        padding: 1rem;
+    }
+    .list {
+	display: grid;
+	grid-template-columns: 1fr;
+    }
+    .hamburger {
+        display: none;
+    }
+    .navigation {
+        display: block;
+        border-bottom: 1px solid #eee;
+    }
+    .navigation ul {
+        display: flex;
+        /* justify-content: space-between;
+        align-items: center; */
+    }
+    .navigation a {
+        border: none;
+    }
+    .navigation a:hover {
+        border: none;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 2rem;
+        background-color: #eee;
+        border-radius: 22px;
+        padding: 1rem;
+    }
+}
