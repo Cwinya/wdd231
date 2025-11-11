@@ -128,10 +128,6 @@ button {
 	padding: 0.5rem 1rem;
 	font-weight: 700;
 }
-.list {
-	display: grid;
-	grid-template-columns: 1fr;
-}
 .list img {
 	display: none;
 }
