@@ -4,12 +4,10 @@
     margin: 0 auto;
     }
     .companies {
-	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 	grid-gap: 5px;
 	justify-content: center;
 	align-items: center;
-    text-align: center;
     }
     header {
 	display: grid;
@@ -28,7 +26,6 @@
         padding: 1rem;
     }
     .list {
-	display: grid;
 	grid-template-columns: 1fr;
     }
     .hamburger {
@@ -40,8 +37,6 @@
     }
     .navigation ul {
         display: flex;
-        /* justify-content: space-between;
-        align-items: center; */
     }
     .navigation a {
         border: none;
@@ -50,11 +45,7 @@
         border: none;
     }
     footer {
-        display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        grid-gap: 2rem;
-        background-color: #eee;
-        border-radius: 22px;
         padding: 1rem;
     }
 }
