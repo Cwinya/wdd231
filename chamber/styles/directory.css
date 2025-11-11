@@ -132,9 +132,9 @@ button {
 .list {
 	display: grid;
 	grid-template-columns: 1fr;
-	img {
-		display: none;
-	}
+}
+.list img {
+	display: none;
 }
 .list section {
 	background-color: #7fffd4;
