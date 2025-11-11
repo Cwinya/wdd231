@@ -108,14 +108,15 @@ main {
 	grid-gap: 5px;
 	margin-bottom: 1rem;
 	text-align: center;
-	section {
-		margin-bottom: 1rem;
-	}
-	img {
-		width: 100%;
-		height: auto;
-	}
 }
+.companies section {
+	margin-bottom: 1rem;
+}
+.companies img {
+	width: 100%;
+	height: auto;
+}
+
 
 .buttons {
 	margin: 1rem auto;
