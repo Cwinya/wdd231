@@ -58,10 +58,10 @@ h1 {
     margin: 0;
     padding: 0;
 }
-.navigation li.current {
+/* .navigation li.current {
     background-color: #9FA09F;
 	color: #000000;
-}
+} */
 .navigation a {
     display: block;
     text-decoration: none;
