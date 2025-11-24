@@ -1,7 +1,7 @@
 const url = "data/members.json";
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
-// const display = document.querySelector(".companies");
+
 const cards = document.querySelector(".companies");
 cards.innerHTML = "";
 
@@ -79,13 +79,24 @@ navbtn.addEventListener('click', () => {
     navbar.classList.toggle('show');
 });
 
-// const lastModified = document.querySelector('#lastModified');
-// const today = new Date();
-// lastModified.innerHTML = `Last Modified: ${new Intl.DateTimeFormat(
-//     "en-US",
-//     {dateStyle:"full"}
-// ).format(today)}`;
-
 const lastModifiedDate = document.lastModified;
 console.log("Last Modified;", lastModifiedDate);
 document.getElementById("lastModified").textContent = "Last Modofication: " + lastModifiedDate;
+
+
+
+
+// --- Global Functions (Used on all pages) ---
+
+// Set the current year and last modified date in the footer
+// document.getElementById('current-year').textContent = new Date().getFullYear();
+// document.getElementById('last-modified').textContent = document.lastModified;
+
+// Toggle mobile navigation menu
+// const nav = document.querySelector('.navigation');
+// const menuToggle = document.getElementById('menu-toggle');
+
+// menuToggle.addEventListener('click', () => {
+//     nav.classList.toggle('open');
+//     menuToggle.textContent = nav.classList.contains('open') ? '✕' : '☰';
+// });

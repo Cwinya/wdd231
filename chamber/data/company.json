@@ -1,0 +1,83 @@
+[
+    {
+        "name": "Apex Innovations Co.",
+        "address": "123 Tech Drive, Suite 100",
+        "phone": "(555) 123-4567",
+        "websiteurl": "https://www.apexinnovations.com",
+        "imageurl": "https://scontent.fnbo7-1.fna.fbcdn.net/v/t39.30808-6/438263195_122141123432212920_1197220555267366622_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=r3eNOSGdHFUQ7kNvwEXbDVt&_nc_oc=AdkJZ0f8Nx5rL42t5yRzrvRe22FruuflHJMYb5BrnuGooKcVwERmpiCMfeuSoCIEGgc&_nc_zt=23&_nc_ht=scontent.fnbo7-1.fna&_nc_gid=hotzBZb4N8Mj5SMrIsEjIg&oh=00_Afj5cfrsi3JGXWInF6rjhIW_exTx82OjcPfs1Zevo01fGQ&oe=69250E6E",
+        "membershipLevel": "Gold",
+        "otherInfo": "Specializing in software solutions and consulting."
+    },
+    {
+        "name": "River City Bank",
+        "address": "45 Financial Ave",
+        "phone": "(555) 987-6543",
+        "websiteurl": "https://www.rivercitybank.net",
+        "imageurl": "https://sunrisemarketplace.com/wp-content/uploads/2017/08/452_SMP-river-city-bank-logo.jpg",
+        "membershipLevel": "Silver",
+        "otherInfo": "Local community bank serving families and small businesses."
+    },
+    {
+        "name": "Green Thumb Landscaping",
+        "address": "789 Garden Road",
+        "phone": "(555) 333-2211",
+        "websiteurl": "https://www.greenthumb.org",
+        "imageurl": "images/logos/greenthumb_logo.webp",
+        "membershipLevel": "Bronze", 
+        "otherInfo": "Residential and commercial landscaping services."
+    },
+    {
+        "name": "Elite Consulting Group",
+        "address": "100 Executive Tower",
+        "phone": "(555) 777-8888",
+        "websiteurl": "https://www.eliteconsulting.com",
+        "imageurl": "https://scontent.fnbo7-1.fna.fbcdn.net/v/t39.30808-6/278459555_656534315797286_5473166798960174312_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=spDMBfFl75sQ7kNvwFQkMp1&_nc_oc=AdmGFjOtNzpSbMWequ800g6YuJj5z0NKEo9H1-VH9nBhbByXIMqSuVsmLAScP-qHEOw&_nc_zt=23&_nc_ht=scontent.fnbo7-1.fna&_nc_gid=sD1MduDV1KaGHIoRqaEGgA&oh=00_AfgW5GMoYcSVJBVziLXyCj8WiLXXwqBTfb5madxCN0aMHg&oe=6925144F",
+        "membershipLevel": "Gold",
+        "otherInfo": "Premier business strategy and leadership development."
+    },
+    {
+        "name": "Family Diner & Grill",
+        "address": "202 Main Street",
+        "phone": "(555) 444-5555",
+        "websiteurl": "https://www.familydiner.net",
+        "imageurl": "https://scontent.fnbo7-1.fna.fbcdn.net/v/t39.30808-6/529926652_122105381738966601_5454555494821646810_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=ICEjRny-AEgQ7kNvwG_zBIg&_nc_oc=Adk5JFpYgDIb9FRMCv5v8qVP6FidFHyebqHnA_dCxrBWkuQyvLVEXTEl1Vx1spHObPI&_nc_zt=23&_nc_ht=scontent.fnbo7-1.fna&_nc_gid=C-UjRgLs_0nn5VSquNuNKw&oh=00_Afj-hm5fL9lbKK_llhAeHwUC_Et4pPLVG6TYsbkltvB2Bw&oe=69250F23",
+        "membershipLevel": "Silver",
+        "otherInfo": "Serving breakfast and lunch since 1985."
+    },
+    {
+        "name": "Startup Spark LLC",
+        "address": "303 Co-Work Space",
+        "phone": "(555) 111-0000",
+        "websiteurl": "https://www.startupspark.co",
+        "imageurl": "https://scontent.fnbo7-1.fna.fbcdn.net/v/t39.30808-6/338995667_6305880899450389_5178839267977491467_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=Ug60gv6qiFAQ7kNvwFzwkjR&_nc_oc=AdkHDvIGv1gdhggeybzfup9vpDQARjDdRC7QCweZzpZx6U9TV96AC7nhmk5o03EXD-E&_nc_zt=23&_nc_ht=scontent.fnbo7-1.fna&_nc_gid=0QmZ2gn-7e4-5yb7QXunng&oh=00_Afh6OHJNir45QdNmGZvttvWxnLjBzT-buSTBAsr0z5ogUw&oe=69252F0E",
+        "membershipLevel": "Non-Profit", 
+        "otherInfo": "Supporting new entrepreneurs in the area."
+    },
+    {
+        "name": "Global Transit Solutions",
+        "address": "88 Harbor View Lane",
+        "phone": "(555) 654-3210",
+        "websiteurl": "https://www.globaltransitsolutions.com",
+        "imageurl": "https://scontent.fnbo7-1.fna.fbcdn.net/v/t39.30808-6/386545586_1033598701188103_384299640157015301_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=3N8GE8HOsQsQ7kNvwHpjrTq&_nc_oc=Adk5legsod7kg-Q16v7QV0vrBlVcp-0jwVlINE6fCHy2qIC3xOd3RAQKrl32OHw5jK0&_nc_zt=23&_nc_ht=scontent.fnbo7-1.fna&_nc_gid=cp7gAkLS8BJHyNO5kGWGag&oh=00_Afjg4NnhNI1HpzwMSCtotdX9kjCu4crWxMn8SGgTlIf7Rg&oe=6925079F",
+        "membershipLevel": "Gold",
+        "otherInfo": "International shipping, freight, and logistics experts."
+    },
+    {
+        "name": "Pixel Perfect Design",
+        "address": "55 Creative Court, Loft 4B",
+        "phone": "(555) 222-8899",
+        "websiteurl": "https://www.pixelperfect.design",
+        "imageurl": "images/logos/pixel_perfect.webp",
+        "membershipLevel": "Bronze",
+        "otherInfo": "Graphic design, branding, and web development services."
+    },
+    {
+        "name": "Serenity Wellness Center",
+        "address": "909 Healing Path",
+        "phone": "(555) 777-1234",
+        "websiteurl": "https://www.serenitywellness.com",
+        "imageurl": "https://scontent.fnbo7-1.fna.fbcdn.net/v/t39.30808-6/302475414_451599266985340_6711472839330008849_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=k82uprVKlUQQ7kNvwEO-zq3&_nc_oc=Adkhwh6U_P1UC90x0iJ5__P31frmXOZqy6ZU099-yKGEGw2r7xdUlkX-xM6Z0XITibQ&_nc_zt=23&_nc_ht=scontent.fnbo7-1.fna&_nc_gid=v9OrO75fegu1deQihkZC1g&oh=00_AfiAQ8jAW0ZX5UUsRs41Ypyz998SZ_KBGpW3usq3l5VTjQ&oe=6924F894",
+        "membershipLevel": "Silver",
+        "otherInfo": "Holistic health, yoga, and massage therapy."
+    }
+]

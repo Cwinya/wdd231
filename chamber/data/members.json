@@ -8,9 +8,9 @@
             "imageurl":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Naspers_Media24_building.jpg/250px-Naspers_Media24_building.jpg",
             "membershiplevel":
             {
-                "member":1,
-                "silver":2,
-                "gold":3
+                "Member":1,
+                "Sember":2,
+                "Gold":3
             }
         },
         {
@@ -21,9 +21,9 @@
             "imageurl":"https://resourcegovernance.org/sites/default/files/styles/16_9_deskt/public/assets/images/shutterstock_728510293.jpg?h=70506272&itok=5FSgqPZf",
             "membershiplevel":
             {
-                "member":1,
-                "silver":2,
-                "gold":3
+                "Member":1,
+                "Silver":2,
+                "Gold":3
             }
         },
         {
@@ -34,9 +34,9 @@
             "imageurl":"https://www.telecomreviewafrica.com/wp-content/uploads/2024/09/MTN_Plans_to_Withdraw_from_Two_West_African_Markets_.jpg",
             "membershiplevel":
             {
-                "member":1,
-                "silver":2,
-                "gold":3
+                "Member":1,
+                "Silver":2,
+                "Gold":3
             }
         },
         {
@@ -47,9 +47,9 @@
             "imageurl":"https://estateintel.com/assets-ei/2016/01/dangote-e1491739646767.png",
             "membershiplevel":
             {
-                "member":1,
-                "silver":2,
-                "gold":3
+                "Sember":1,
+                "Silver":2,
+                "Gold":3
             }
         },
         {
@@ -60,9 +60,9 @@
             "imageurl":"https://bunny-wp-pullzone-t9wsb4m84y.b-cdn.net/wp-content/uploads/2022/12/Standard-Bank-pic.jpg",
             "membershiplevel":
             {
-                "member":1,
-                "silver":2,
-                "gold":3
+                "Member":1,
+                "Sember":2,
+                "Gold":3
             }
         },
         {
@@ -73,9 +73,9 @@
             "imageurl":"https://www.glassdoor.com/imgproxy/x1KG-j88IURwsDoN6fzCmR2pMIZVJ1m0e3eZ9yCwX7A/rs::170:170/aHR0cHM6Ly9tZWRpYS5nbGFzc2Rvb3IuY29tL2xzdDJ4L2Q1LzAwLzM1LzI0L2ZpcnN0cmFuZC1uYW1pYmlhLmpwZz9zaWduYXR1cmU9ZDA3YzhmMWJmOTUwMTMyYmVkNjFkYjg1ZjAxYTFhN2I3MzBjMDA3YTczYzQ2MjZjOTc4ODc1YTUyYWZmYzQ4Yg",
             "membershiplevel":
             {
-                "member":1,
-                "silver":2,
-                "gold":3
+                "Member":1,
+                "Sember":2,
+                "Gold":3
             }
         },
         {
@@ -86,9 +86,9 @@
             "imageurl":"https://sasol.com/sites/default/files/2023-06/sasol_place.jpg",
             "membershiplevel":
             {
-                "member":1,
-                "silver":2,
-                "gold":3
+                "Member":1,
+                "Silver":2,
+                "Gold":3
             }
         }
     ]

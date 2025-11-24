@@ -14,14 +14,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single+Ink:wght@100..900&family=Lato:ital@0;1&family=Libertinus+Serif+Display&family=Lobster&family=Oleo+Script:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Directory | The United Africa Chamber of Commerce</title>
+    <title>Homepage | The United Africa Chamber of Commerce</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/directory.css">
     <link rel="stylesheet" href="styles/large.css">
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/home.js" defer></script>
 </head>
 <body>
-    <header class="page-header">
+     <header class="page-header">
         <div class="logo">
             <img src="images/people-group-solid.svg" alt="Logo image" width="45" height="45">
         </div>
@@ -34,7 +34,7 @@
             <nav class="navigation" id="nav-bar">
             <ul>
                 <li class="current"><a href="index.html">Home</a></li>
-                <li><a href="#">Directory</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="#">Join</a></li>
                 <li><a href="#">Discover</a></li>
             </ul>
@@ -47,14 +47,65 @@
             <button id="ham-btn" class="hamburger"></button>
         </div>
     </header>
-    <main>
-        <h1>The United Chamber of Commerce</h1>
-        <div class="buttons">
-            <button id="grid">Grid</button>
-            <button id="list">List</button>
+
+    <main id="home-main">
+        <h1>Home Page</h1>
+        <section class="hero">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="images/img4.jpg" alt="Chamber of Commerce Image" width="100%" height="100px">
+                <div class="text">London Chamber of Commerce</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="images/img5.jpg" alt="Chamber of Commerce Image" width="100%" height="100px">
+                <div class="text">France Chamber of Commerce</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="images/img6.jpg" alt="Chamber of Commerce Image" width="100%" height="100px">
+                <div class="text">USA Chamber of commerce</div>
+            </div>
         </div>
-        <div class="companies"></div>
+        </section>
+
+        <section class="weather">
+            <div class="general card events" id="events-section">
+                <h2>Events</h2>
+                <h3>Upcoming Events</h3>
+                <article class="event">
+                    <h4>Annual Business Networking Gala</h4>
+                    <p>Date: October 25th, 6:00 PM</p>
+                    <p>Location: Grand Ballroom | <a href="#">Details</a></p>
+                </article>
+                <article class="event">
+                    <h4>Small Business Workshop: Digital Marketing</h4>
+                    <p>Date: November 10th, 9:00 AM</p>
+                    <p>Location: Chamber Office | <a href="#">Details</a></p>
+                </article>
+                <a href="#" class="view-all-link">View All Events →</a>
+            </div>
+            <div class="general shared-quarter current-weather card">
+                <h2>Current Weather</h2>
+                <img id="weather-icon" src="" alt="Weather Icon">
+                <p>Temperature: <span id="current-temp">--°F</span></p>
+                <p id="weather-desc">Loading...</p>
+            </div>
+
+            <div class="general shared-quarter card">
+                <h2>Weather Forecast</h2>
+                <div id="forecast-container">
+                    <p>Forecast loading...</p>
+                </div>
+            </div>
+        </section>
+        <section id="spotlights-section" class="business">
+        </section>
     </main>
+
     <footer>
         <section>
             <h2>United Africa Chamber of Commerce</h2>

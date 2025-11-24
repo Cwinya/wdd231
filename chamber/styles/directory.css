@@ -169,3 +169,128 @@ footer section {
     border-radius: 22px;
     padding: 1rem;
 }
+
+
+/* RULES FOR THE HOMEPAGE */
+.hero {
+    margin-bottom: 2rem;
+    overflow: hidden; /* Ensures image doesn't bleed */
+}
+
+.hero img {
+    width: 100%;
+    height: 200px;
+    display: block;
+    object-fit: cover; /* Important for scaling */
+    /* Adjust max-height if you want a fixed height on all screens */
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.weather, .business {
+	display: grid;
+	grid-template-columns: 1fr;
+    grid-gap: .5rem;
+    margin-top: 2rem;
+}
+.events {
+	flex: 0 0 50%;
+}
+.shared-quarter {
+    flex: 1 1 0;
+}
+.current-waether, .bsecond {
+	margin: 0 1rem;
+}
+.general {
+	padding: 15px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+.weather h2 {
+  text-align: center;
+  background-color: #000000;
+  color: #ffffffff;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+/* Spotlights styling */
+.spotlight-card {
+    text-align: center;
+}
+.spotlight-card img {
+    width: 40px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+}
+.membership-level {
+    font-size: 0.9em;
+    font-style: italic;
+    color: #666;
+}
+.membership-level {
+    font-size: 0.9em;
+    font-style: italic;
+    color: #666;
+}
+
+
+
+
+
+
+
+
+
+
+
