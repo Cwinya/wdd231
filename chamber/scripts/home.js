@@ -143,7 +143,60 @@ navbtn.addEventListener('click', () => {
 
 
 
-// JION PAGE JS
+// JOIN PAGE JS
+document.addEventListener('DOMContentLoaded', function() {
+            
+    // --- MODAL HANDLER FUNCTIONS ---
+    
+    // Function to close a specific modal element
+    function closeModal(modalElement) {
+        if (modalElement) {
+            modalElement.classList.remove('active');
+            modalElement.style.display = 'none'; 
+        }
+    }
+
+    // Function to open a specific modal element
+    function openModal(modalElement) {
+        if (modalElement) {
+            modalElement.classList.add('active');
+            modalElement.style.display = 'block';
+        }
+    }
+
+    // --- 1. OPENING LOGIC (Learn More buttons) ---
+    // Select all buttons with the class 'open-modal-btn'
+    const openButtons = document.querySelectorAll('.open-modal-btn');
+
+    openButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            // Get the target modal ID (e.g., 'modal-np') from the data attribute
+            const modalId = this.getAttribute('data-target-modal'); 
+            const targetModal = document.getElementById(modalId);
+            openModal(targetModal);
+        });
+    });
+
+    // --- 2. CLOSING LOGIC (The 'x' span) ---
+    // Target all elements with the class 'modal-close'
+    const closeButtons = document.querySelectorAll('.modal-close');
+
+    closeButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            // Traverse up the DOM tree from the clicked span to find its parent modal
+            const targetModal = this.closest('.modal');
+            closeModal(targetModal);
+        });
+    });
+    
+    // --- 3. CLOSING BY CLICKING OUTSIDE (Backdrop) ---
+    window.addEventListener('click', function(event) {
+        // If the click occurred directly on an element with the class 'modal' 
+        if (event.target.classList.contains('modal')) {
+            closeModal(event.target);
+        }
+    });
+});
 // Set the timestamp when the page loads
 document.addEventListener('DOMContentLoaded', function() {
     const timestampField = document.getElementById('timestamp');

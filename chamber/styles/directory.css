@@ -12,10 +12,10 @@
     --color-accent-foreground: hsl(215, 80%, 15%);
     --color-border: hsl(215, 15%, 88%);
     --color-input: hsl(215, 15%, 88%);
-    
+
     --shadow-card: 0 4px 6px -1px rgba(24, 39, 75, 0.08), 0 2px 4px -2px rgba(24, 39, 75, 0.06);
     --shadow-elevated: 0 10px 15px -3px rgba(24, 39, 75, 0.1), 0 4px 6px -4px rgba(24, 39, 75, 0.08);
-    
+
     --radius: 0.5rem;
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -25,6 +25,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
     background: linear-gradient(135deg, var(--color-background), var(--color-secondary));
@@ -32,15 +33,17 @@ body {
     line-height: 1.6;
     min-height: 100vh;
 }
-.container,header, main, nav, footer {
-    max-width: 1280px;
+
+/* Combined selectors with identical rules: .container, header, main, nav, footer */
+.container,
+header,
+main,
+nav,
+footer {
+    max-width: 1280px; /* Kept 1280px from .container rule */
     margin: 0 auto;
     padding: 0 1rem;
 }
-/* header, main, nav, footer {
-    max-width: 900px;
-    margin: 0 auto;
-    } */
 
 .page-header {
     display: flex;
@@ -51,7 +54,7 @@ body {
     border-bottom: var(--color-border); /* Darker border for contrast */
 }
 
-.logo img, 
+.logo img,
 .contrast img {
     width: 30px;
     height: 60px;
@@ -59,7 +62,7 @@ body {
 
 .textheader {
     /* Text takes available space, but allows shrinking */
-    flex-grow: 1; 
+    flex-grow: 1;
     min-width: 0; /* Allows text to shrink below content width */
     margin: 0 10px;
 }
@@ -73,9 +76,10 @@ body {
     overflow: hidden;    /* Hides excess text */
     text-overflow: ellipsis; /* Adds '...' */
 }
+
 h1 {
     /* High Contrast: Dark Blue background with White text */
-    background-color: var(--color-background); 
+    background-color: var(--color-background);
     color: var(--color-primary);
     padding: 1rem;
     text-align: center;
@@ -88,24 +92,28 @@ h1 {
     display: none;
     background-color: var(--color-foreground);
 }
+
 .navigation.show {
     display: block;
     position: absolute;
     top: 13%;
 }
+
 .navigation ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
+
 .navigation a {
     display: block;
     text-decoration: none;
     padding: .8rem 10px;
     color: var(--color-card);
 }
+
 .navigation a:hover {
-    background-color: var(--color-accent); 
+    background-color: var(--color-accent);
     color: #000000;
     border-radius: 22px;
 }
@@ -118,13 +126,16 @@ h1 {
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 .hamburger::before {
     content: "\2630";
     font-size: 2rem;
 }
+
 .hamburger.show::before {
     content: "\00D7";
 }
+
 main {
     margin: 0 auto;
     padding: 0.5rem;
@@ -132,6 +143,7 @@ main {
     background-color: var(--color-background);
     font-family: Acme, Arial, sans-serif;
 }
+
 .companies {
     display: grid;
     grid-template-columns: 1fr;
@@ -139,34 +151,41 @@ main {
     margin-bottom: 1rem;
     text-align: center;
 }
+
 .companies section {
     border-radius: 6px;
     box-shadow: var(--shadow-card);
     cursor: pointer;
     margin: 1rem;
 }
+
 .companies img {
     width: 100%;
     height: 300px;
     padding: 1rem;
 }
+
 .buttons {
     margin: .25rem auto;
     background-color: var(--color-background);
     text-align: center;
 }
+
 button {
     padding: 0.5rem 1rem;
     font-weight: 700;
 }
+
 .list img {
     display: none;
 }
+
 .list section {
     text-align: center;
     background-color: var(--color-background);
     box-shadow: var(--shadow-elevated);
 }
+
 footer {
     display: grid;
     grid-template-columns: 1fr;
@@ -176,9 +195,11 @@ footer {
     border-radius: 22px;
     margin-top: 2rem;
 }
+
 footer section {
     text-align: center;
 }
+
 .socials {
     display: flex;
     justify-content: center;
@@ -186,6 +207,7 @@ footer section {
     column-gap: 1rem;
     padding: 1rem;
 }
+
 .socials a {
     display: flex;
     justify-content: center;
@@ -195,19 +217,21 @@ footer section {
     border: 1px solid #444;
     border-radius: 22px;
 }
+
 .socials img {
     width: 22px;
     height: 22px;
 }
+
 .socials a:hover {
     /* High Contrast: Light gray on hover for contrast with dark background */
     background-color: #CCCCCC;
 }
+
 .last {
     border-radius: 22px;
     padding: 1rem;
 }
-
 
 /* RULES FOR THE HOMEPAGE */
 .hero {
@@ -223,62 +247,80 @@ footer section {
     display: block;
     object-fit: cover; /* Important for scaling */
 }
+
 /* Slideshow container */
 .slideshow-container {
-  max-width: 100%;
-  position: relative;
-  margin: auto;
+    max-width: 100%;
+    position: relative;
+    margin: auto;
 }
 
 /* Hide the images by default */
 .mySlides {
-  display: none;
+    display: none;
 }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
+/* Caption text and Number text combined as they share color, size, padding, and position rule */
+.text,
 .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+    color: #f2f2f2;
+    padding: 8px 12px;
+    position: absolute;
 }
-.active, .dot:hover {
-  background-color: #717171;
+
+.text {
+    font-size: 15px;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext {
+    font-size: 12px;
+    top: 0;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
 }
 
 /* Fading animation */
 .fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
 }
-.weather, .business, .introduction {
+
+.weather,
+.business,
+.introduction {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: .5rem;
     margin-top: 2rem;
 }
-.welcome h2 {
+
+/* Combined selectors with identical rules: .welcome h2, .mission h2, .advocacy h2 */
+.welcome h2,
+.mission h2,
+.advocacy h2 {
     text-align: center;
+}
+
+.welcome h2 {
     font-size: 1.5rem;
     font-weight: bolder;
 }
+
 .welcome p {
     text-align: center;
     font-size: 1.125rem;
@@ -286,32 +328,38 @@ footer section {
     max-width: 42rem;
     margin: 0 auto;
 }
-.mission h2, .advocacy h2 {
-    text-align: center;
-}
-.mission, .advocacy {
+
+/* Combined selectors with identical rules: .mission, .advocacy */
+.mission,
+.advocacy {
     padding: 2rem;
     margin: 0;
     box-shadow: var(--shadow-elevated);
 }
+
 .events {
     flex: 0 0 50%;
 }
+
 .shared-quarter {
     flex: 1 1 0;
 }
-.current-waether, .bsecond {
+
+.current-waether,
+.bsecond {
     margin: 0 1rem;
 }
+
 .general {
     padding: 15px;
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
+
 .weather h2 {
-  text-align: center;
-  background-color: #000000; 
-  color: #FFFFFF;
+    text-align: center;
+    background-color: #000000;
+    color: #FFFFFF;
 }
 
 .card {
@@ -321,10 +369,12 @@ footer section {
     box-shadow: var(--shadow-elevated); /* Pure Black shadow */
     margin-bottom: 1rem;
 }
+
 /* Spotlights styling */
 .spotlight-card {
     text-align: center;
 }
+
 .spotlight-card img {
     width: 40px;
     height: 80px;
@@ -332,6 +382,7 @@ footer section {
     border-radius: 50%;
     margin-bottom: 0.5rem;
 }
+
 .membership-level {
     font-size: 0.9em;
     font-style: italic;
@@ -358,7 +409,10 @@ footer section {
     margin-bottom: 1rem;
 }
 
-.page-description {
+/* Combined selectors with identical rules: .page-description and .welcome p */
+.page-description,
+.cta-description,
+.thankyou-description {
     font-size: 1.125rem;
     color: var(--color-muted-foreground);
     max-width: 42rem;
@@ -470,12 +524,6 @@ footer section {
     margin-bottom: 1.5rem;
 }
 
-.cta-description {
-    font-size: 1.125rem;
-    color: var(--color-muted-foreground);
-    margin-bottom: 2rem;
-}
-
 /* Join Page Layout */
 .join-grid {
     display: grid;
@@ -491,7 +539,9 @@ footer section {
     box-shadow: var(--shadow-elevated);
 }
 
-.form-title {
+.form-title,
+.membership-heading,
+.card-title {
     font-size: 1.875rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
@@ -514,8 +564,10 @@ footer section {
     margin-bottom: 0.5rem;
 }
 
-.form-label-main {
-    font-size: 1rem;
+.form-label-main,
+.membership-title,
+.modal-benefits-title {
+    font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 1rem;
 }
@@ -580,12 +632,6 @@ footer section {
     gap: 1rem;
 }
 
-.membership-heading {
-    font-size: 1.875rem;
-    font-weight: bold;
-    margin-bottom: 1.5rem;
-}
-
 .membership-card {
     background: var(--color-card);
     border: 1px solid var(--color-border);
@@ -596,12 +642,6 @@ footer section {
 
 .membership-card:hover {
     box-shadow: var(--shadow-elevated);
-}
-
-.membership-title {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-bottom: 0.25rem;
 }
 
 .membership-subtitle {
@@ -680,12 +720,6 @@ footer section {
     margin-bottom: 2rem;
 }
 
-.modal-benefits-title {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-}
-
 .modal-benefits-list {
     list-style: none;
 }
@@ -734,23 +768,12 @@ footer section {
     margin-bottom: 1rem;
 }
 
-.thankyou-description {
-    font-size: 1.125rem;
-    color: var(--color-muted-foreground);
-}
-
 .thankyou-card {
     background: var(--color-card);
     border-radius: var(--radius);
     padding: 2rem;
     box-shadow: var(--shadow-elevated);
     margin-bottom: 2rem;
-}
-
-.card-title {
-    font-size: 1.875rem;
-    font-weight: 600;
-    margin-bottom: 1.5rem;
 }
 
 .summary-content {
@@ -883,4 +906,3 @@ footer section {
 .slide-in-right {
     animation: slideInRight 0.5s ease-out;
 }
-

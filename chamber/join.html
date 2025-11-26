@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single+Ink:wght@100..900&family=Lato:ital@0;1&family=Libertinus+Serif+Display&family=Lobster&family=Oleo+Script:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Homepage | The United Africa Chamber of Commerce</title>
+    <title>Join | The United Africa Chamber of Commerce</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/directory.css">
     <link rel="stylesheet" href="styles/large.css">
@@ -212,35 +212,49 @@
                     </div>
                 </div>
 
-                <div class="membership-section">
-                    <h3 class="membership-heading">Membership Levels</h3>
-                    
-                    <div class="membership-card slide-in-right" style="animation-delay: 0s">
+                <div class="membership-levels-grid">
+                <!-- 1. NP Membership Card -->
+                    <div class="membership-card slide-in-right card-np">
                         <h4 class="membership-title">NP Membership</h4>
                         <p class="membership-subtitle">For Non-Profit Organizations</p>
                         <p class="membership-price">Free</p>
-                        <button class="btn btn-outline btn-full" onclick="openModal('np')">Learn More</button>
+                        <!-- Pure JS: class and data-attribute used instead of onclick -->
+                        <button class="learn-more-btn open-modal-btn" data-target-modal="modal-np">
+                            Learn More
+                        </button>
                     </div>
 
-                    <div class="membership-card slide-in-right" style="animation-delay: 0.15s">
+                    <!-- 2. Bronze Membership Card -->
+                    <div class="membership-card slide-in-right card-bronze">
                         <h4 class="membership-title">Bronze Membership</h4>
                         <p class="membership-subtitle">Perfect for Small Businesses</p>
                         <p class="membership-price">$299/year</p>
-                        <button class="btn btn-outline btn-full" onclick="openModal('bronze')">Learn More</button>
+                        <!-- Pure JS: class and data-attribute used instead of onclick -->
+                        <button class="learn-more-btn open-modal-btn" data-target-modal="modal-bronze">
+                            Learn More
+                        </button>
                     </div>
 
-                    <div class="membership-card slide-in-right" style="animation-delay: 0.3s">
+                    <!-- 3. Silver Membership Card -->
+                    <div class="membership-card slide-in-right card-silver">
                         <h4 class="membership-title">Silver Membership</h4>
                         <p class="membership-subtitle">Growing Businesses</p>
                         <p class="membership-price">$599/year</p>
-                        <button class="btn btn-outline btn-full" onclick="openModal('silver')">Learn More</button>
+                        <!-- Pure JS: class and data-attribute used instead of onclick -->
+                        <button class="learn-more-btn open-modal-btn" data-target-modal="modal-silver">
+                            Learn More
+                        </button>
                     </div>
 
-                    <div class="membership-card slide-in-right" style="animation-delay: 0.45s">
+                    <!-- 4. Gold Membership Card -->
+                    <div class="membership-card slide-in-right card-gold">
                         <h4 class="membership-title">Gold Membership</h4>
                         <p class="membership-subtitle">Premium Business Partnership</p>
                         <p class="membership-price">$999/year</p>
-                        <button class="btn btn-outline btn-full" onclick="openModal('gold')">Learn More</button>
+                        <!-- Pure JS: class and data-attribute used instead of onclick -->
+                        <button class="learn-more-btn open-modal-btn" data-target-modal="modal-gold">
+                            Learn More
+                        </button>
                     </div>
                 </div>
             </div>
@@ -248,10 +262,12 @@
     </main>
 
     <!-- Modals -->
+    
+    <!-- NP Modal -->
     <div id="modal-np" class="modal">
         <div class="modal-content">
-            <span class="modal-close" onclick="closeModal('np')">&times;</span>
-            <h3 class="modal-title">NP Membership</h3>
+            <span class="modal-close">&times;</span>
+            <h3 class="modal-title" style="color: var(--color-primary);">NP Membership</h3>
             <p class="modal-subtitle">For Non-Profit Organizations</p>
             <p class="modal-price">Free</p>
             <h4 class="modal-benefits-title">Membership Benefits:</h4>
@@ -265,10 +281,11 @@
         </div>
     </div>
 
+    <!-- Bronze Modal -->
     <div id="modal-bronze" class="modal">
         <div class="modal-content">
-            <span class="modal-close" onclick="closeModal('bronze')">&times;</span>
-            <h3 class="modal-title">Bronze Membership</h3>
+            <span class="modal-close">&times;</span>
+            <h3 class="modal-title" style="color: var(--color-secondary);">Bronze Membership</h3>
             <p class="modal-subtitle">Perfect for Small Businesses</p>
             <p class="modal-price">$299/year</p>
             <h4 class="modal-benefits-title">Membership Benefits:</h4>
@@ -283,10 +300,11 @@
         </div>
     </div>
 
+    <!-- Silver Modal -->
     <div id="modal-silver" class="modal">
         <div class="modal-content">
-            <span class="modal-close" onclick="closeModal('silver')">&times;</span>
-            <h3 class="modal-title">Silver Membership</h3>
+            <span class="modal-close">&times;</span>
+            <h3 class="modal-title" style="color: var(--color-tertiary);">Silver Membership</h3>
             <p class="modal-subtitle">Growing Businesses</p>
             <p class="modal-price">$599/year</p>
             <h4 class="modal-benefits-title">Membership Benefits:</h4>
@@ -302,10 +320,11 @@
         </div>
     </div>
 
+    <!-- Gold Modal -->
     <div id="modal-gold" class="modal">
         <div class="modal-content">
-            <span class="modal-close" onclick="closeModal('gold')">&times;</span>
-            <h3 class="modal-title">Gold Membership</h3>
+            <span class="modal-close">&times;</span>
+            <h3 class="modal-title" style="color: var(--color-gold);">Gold Membership</h3>
             <p class="modal-subtitle">Premium Business Partnership</p>
             <p class="modal-price">$999/year</p>
             <h4 class="modal-benefits-title">Membership Benefits:</h4>
