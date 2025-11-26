@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Organisation of the largest chamber of commerce linking and bring many different small businesses and Corporations in Africa and the rest of the world">
+    <meta name="keywords" content="Chamber of Commerce, United Africa Business Organisation">
+    <meta name="author" content="Cwinya Moses">
+    <meta property="og:title" content="The United Africa Chamber of Commerce">
+    <meta property="og:description" content="Group of Sole Entepreneur, Small Business Owners, Parnerships, Large Corporations in Africa across the Continet">
+    <meta property="og:image" content="https://cwinya.github.io/wdd231/chamber/og-image.png">
+    <meta property="og:url" content="https://cwinya.github.io/wdd231/chamber/directory.html">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single+Ink:wght@100..900&family=Lato:ital@0;1&family=Libertinus+Serif+Display&family=Lobster&family=Oleo+Script:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Homepage | The United Africa Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/home.js" defer></script>
+</head>
+<body>
+    <main class="main-content">
+        <div class="container">
+            <div class="thankyou-container">
+                <div class="thankyou-header fade-in">
+                    <div class="thankyou-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                            <polyline points="22 4 12 14.01 9 11.01"/>
+                        </svg>
+                    </div>
+                    <h2 class="thankyou-title">Thank You for Joining!</h2>
+                    <p class="thankyou-description">
+                        We're excited to welcome you to our chamber community. Your application has been
+                        received successfully.
+                    </p>
+                </div>
+
+                <div class="thankyou-card scale-in" style="animation-delay: 0.2s">
+                    <h3 class="card-title">Application Summary</h3>
+                    <div class="summary-content" id="summaryContent">
+                        <!-- Content will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <div class="thankyou-info scale-in" style="animation-delay: 0.4s">
+                    <h3 class="info-title">What's Next?</h3>
+                    <ul class="info-list">
+                        <li>You'll receive a confirmation email within 24 hours</li>
+                        <li>Our team will review your application and contact you with next steps</li>
+                        <li>Once approved, you'll receive your welcome packet and membership benefits</li>
+                    </ul>
+                </div>
+
+                <div class="thankyou-actions">
+                    <a href="index.html" class="btn btn-outline btn-large">Return to Home</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Get URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        
+        const firstName = urlParams.get('firstName') || '';
+        const lastName = urlParams.get('lastName') || '';
+        const email = urlParams.get('email') || '';
+        const phone = urlParams.get('phone') || '';
+        const businessName = urlParams.get('businessName') || '';
+        const timestamp = urlParams.get('timestamp') || '';
+
+        // Format the timestamp
+        let formattedDate = '';
+        if (timestamp) {
+            const date = new Date(timestamp);
+            formattedDate = date.toLocaleString('en-US', {
+                dateStyle: 'full',
+                timeStyle: 'short'
+            });
+        }
+
+        // Populate the summary content
+        const summaryContent = document.getElementById('summaryContent');
+        summaryContent.innerHTML = `
+            <div class="summary-row">
+                <div class="summary-item">
+                    <p class="summary-label">First Name</p>
+                    <p class="summary-value">${firstName}</p>
+                </div>
+                <div class="summary-item">
+                    <p class="summary-label">Last Name</p>
+                    <p class="summary-value">${lastName}</p>
+                </div>
+            </div>
+            <div class="summary-item summary-full">
+                <p class="summary-label">Email Address</p>
+                <p class="summary-value">${email}</p>
+            </div>
+            <div class="summary-item summary-full">
+                <p class="summary-label">Mobile Phone</p>
+                <p class="summary-value">${phone}</p>
+            </div>
+            <div class="summary-item summary-full">
+                <p class="summary-label">Business/Organization Name</p>
+                <p class="summary-value">${businessName}</p>
+            </div>
+            <div class="summary-item summary-full">
+                <p class="summary-label">Submitted On</p>
+                <p class="summary-value">${formattedDate}</p>
+            </div>
+        `;
+    </script>
+</body>
+</html>

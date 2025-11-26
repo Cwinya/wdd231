@@ -83,20 +83,18 @@ const lastModifiedDate = document.lastModified;
 console.log("Last Modified;", lastModifiedDate);
 document.getElementById("lastModified").textContent = "Last Modofication: " + lastModifiedDate;
 
+// AUTOMATIC SLIDE SHOW
+let slideIndex = 0;
+showSlides();
 
-
-
-// --- Global Functions (Used on all pages) ---
-
-// Set the current year and last modified date in the footer
-// document.getElementById('current-year').textContent = new Date().getFullYear();
-// document.getElementById('last-modified').textContent = document.lastModified;
-
-// Toggle mobile navigation menu
-// const nav = document.querySelector('.navigation');
-// const menuToggle = document.getElementById('menu-toggle');
-
-// menuToggle.addEventListener('click', () => {
-//     nav.classList.toggle('open');
-//     menuToggle.textContent = nav.classList.contains('open') ? '✕' : '☰';
-// });
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}

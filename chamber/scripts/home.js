@@ -12,7 +12,7 @@ function showSlides() {
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}
   slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 8000); // Change image every 2 seconds
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
 }
 
 // --- Home Page Specific Functions (Weather & Spotlights) ---
@@ -140,3 +140,98 @@ navbtn.addEventListener('click', () => {
     navbtn.classList.toggle('show');
     navbar.classList.toggle('show');
 });
+
+
+
+// JION PAGE JS
+// Set the timestamp when the page loads
+document.addEventListener('DOMContentLoaded', function() {
+    const timestampField = document.getElementById('timestamp');
+    if (timestampField) {
+        timestampField.value = new Date().toISOString();
+    }
+});
+
+// Modal functions
+function openModal(modalId) {
+    const modal = document.getElementById('modal-' + modalId);
+    if (modal) {
+        modal.classList.add('active');
+    }
+}
+
+function closeModal(modalId) {
+    const modal = document.getElementById('modal-' + modalId);
+    if (modal) {
+        modal.classList.remove('active');
+    }
+}
+
+// Close modal when clicking outside of modal content
+window.addEventListener('click', function(event) {
+    if (event.target.classList.contains('modal')) {
+        event.target.classList.remove('active');
+    }
+});
+
+// Close modal with Escape key
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        const activeModal = document.querySelector('.modal.active');
+        if (activeModal) {
+            activeModal.classList.remove('active');
+        }
+    }
+});
+
+// THANKYOU PAGE JS
+ // Get URL parameters
+const urlParams = new URLSearchParams(window.location.search);
+
+const firstName = urlParams.get('firstName') || '';
+const lastName = urlParams.get('lastName') || '';
+const email = urlParams.get('email') || '';
+const phone = urlParams.get('phone') || '';
+const businessName = urlParams.get('businessName') || '';
+const timestamp = urlParams.get('timestamp') || '';
+
+// Format the timestamp
+let formattedDate = '';
+if (timestamp) {
+    const date = new Date(timestamp);
+    formattedDate = date.toLocaleString('en-US', {
+        dateStyle: 'full',
+        timeStyle: 'short'
+    });
+}
+
+// Populate the summary content
+const summaryContent = document.getElementById('summaryContent');
+summaryContent.innerHTML = `
+    <div class="summary-row">
+        <div class="summary-item">
+            <p class="summary-label">First Name</p>
+            <p class="summary-value">${firstName}</p>
+        </div>
+        <div class="summary-item">
+            <p class="summary-label">Last Name</p>
+            <p class="summary-value">${lastName}</p>
+        </div>
+    </div>
+    <div class="summary-item summary-full">
+        <p class="summary-label">Email Address</p>
+        <p class="summary-value">${email}</p>
+    </div>
+    <div class="summary-item summary-full">
+        <p class="summary-label">Mobile Phone</p>
+        <p class="summary-value">${phone}</p>
+    </div>
+    <div class="summary-item summary-full">
+        <p class="summary-label">Business/Organization Name</p>
+        <p class="summary-value">${businessName}</p>
+    </div>
+    <div class="summary-item summary-full">
+        <p class="summary-label">Submitted On</p>
+        <p class="summary-value">${formattedDate}</p>
+    </div>
+`;
