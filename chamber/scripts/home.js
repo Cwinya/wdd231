@@ -185,29 +185,29 @@ document.addEventListener('keydown', function(event) {
 });
 
 // THANKYOU PAGE JS
- // Get URL parameters
-const urlParams = new URLSearchParams(window.location.search);
+// Get URL parameters
+    const urlParams = new URLSearchParams(window.location.search);
 
-const firstName = urlParams.get('firstName') || '';
-const lastName = urlParams.get('lastName') || '';
-const email = urlParams.get('email') || '';
-const phone = urlParams.get('phone') || '';
-const businessName = urlParams.get('businessName') || '';
-const timestamp = urlParams.get('timestamp') || '';
+    const firstName = urlParams.get('firstName') || '';
+    const lastName = urlParams.get('lastName') || '';
+    const email = urlParams.get('email') || '';
+    const phone = urlParams.get('phone') || '';
+    const businessName = urlParams.get('businessName') || '';
+    const timestamp = urlParams.get('timestamp') || '';
 
-// Format the timestamp
-let formattedDate = '';
-if (timestamp) {
+    // Format the timestamp
+    let formattedDate = '';
+    if (timestamp) {
     const date = new Date(timestamp);
     formattedDate = date.toLocaleString('en-US', {
         dateStyle: 'full',
         timeStyle: 'short'
     });
-}
+    }
 
-// Populate the summary content
-const summaryContent = document.getElementById('summaryContent');
-summaryContent.innerHTML = `
+    // Populate the summary content
+    const summaryContent = document.getElementById('summaryContent');
+    summaryContent.innerHTML = `
     <div class="summary-row">
         <div class="summary-item">
             <p class="summary-label">First Name</p>
@@ -234,4 +234,4 @@ summaryContent.innerHTML = `
         <p class="summary-label">Submitted On</p>
         <p class="summary-value">${formattedDate}</p>
     </div>
-`;
+    `;
