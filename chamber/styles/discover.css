@@ -1,0 +1,450 @@
+/* CSS Variables - Design System */
+:root {
+    --color-background: hsl(210, 20%, 98%);
+    --color-foreground: hsl(215, 25%, 15%);
+    --color-card: hsl(0, 0%, 100%);
+    --color-primary: hsl(215, 80%, 25%);
+    --color-primary-foreground: hsl(0, 0%, 100%);
+    --color-secondary: hsl(210, 15%, 92%);
+    --color-muted: hsl(210, 15%, 95%);
+    --color-muted-foreground: hsl(215, 15%, 45%);
+    --color-accent: hsl(45, 95%, 55%);
+    --color-accent-foreground: hsl(215, 80%, 15%);
+    --color-border: hsl(215, 15%, 88%);
+    --color-input: hsl(215, 15%, 88%);
+
+    --shadow-card: 0 4px 6px -1px rgba(24, 39, 75, 0.08), 0 2px 4px -2px rgba(24, 39, 75, 0.06);
+    --shadow-elevated: 0 10px 15px -3px rgba(24, 39, 75, 0.1), 0 4px 6px -4px rgba(24, 39, 75, 0.08);
+
+    --radius: 0.5rem;
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    background: linear-gradient(135deg, var(--color-background), var(--color-secondary));
+    color: var(--color-foreground);
+    line-height: 1.6;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Combined selectors with identical rules: .container, header, main, nav, footer */
+.demographics,
+.visit-message,
+.discover-grid,
+header,
+main,
+nav,
+footer {
+    max-width: 1280px; /* Kept 1280px from .container rule */
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: var(--shadow-elevated);
+    border-bottom: var(--color-border); /* Darker border for contrast */
+}
+
+.logo img,
+.contrast img {
+    width: 30px;
+    height: 60px;
+}
+
+.textheader {
+    /* Text takes available space, but allows shrinking */
+    flex-grow: 1;
+    min-width: 0; /* Allows text to shrink below content width */
+    margin: 0 10px;
+}
+
+.textheader p {
+    /* Mobile text: Small font, no wrapping, ellipsis truncation */
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    white-space: nowrap; /* Prevents wrapping */
+    overflow: hidden;    /* Hides excess text */
+    text-overflow: ellipsis; /* Adds '...' */
+}
+
+h1 {
+    /* High Contrast: Dark Blue background with White text */
+    background-color: var(--color-background);
+    color: var(--color-primary);
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(24, 39, 75, 0.1);
+    transform: var(--transition);
+}
+
+/******************************NAVIGATION****************************************/
+.navigation {
+    display: none;
+    background-color: var(--color-foreground);
+}
+
+.navigation.show {
+    display: block;
+    position: absolute;
+    top: 13%;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    text-decoration: none;
+    padding: .8rem 10px;
+    color: var(--color-card);
+}
+
+.navigation a:hover {
+    background-color: var(--color-accent);
+    color: #000000;
+    border-radius: 22px;
+}
+
+/******************************HAMBURGER****************************************/
+.hamburger {
+    border: none;
+    background-color: var(--color-background);
+    color: black;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+main {
+    margin: 0 auto;
+    padding: 0.5rem;
+    /* max-width: 700px; */
+    background-color: var(--color-background);
+    font-family: Acme, Arial, sans-serif;
+}
+
+.companies {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.companies section {
+    border-radius: 6px;
+    box-shadow: var(--shadow-card);
+    cursor: pointer;
+    margin: 1rem;
+}
+
+.companies img {
+    width: 100%;
+    height: 300px;
+    padding: 1rem;
+}
+
+.buttons {
+    margin: .25rem auto;
+    background-color: var(--color-background);
+    text-align: center;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+}
+
+.list img {
+    display: none;
+}
+
+.list section {
+    text-align: center;
+    background-color: var(--color-background);
+    box-shadow: var(--shadow-elevated);
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    border-radius: 22px;
+    margin-top: 2rem;
+}
+
+footer section {
+    text-align: center;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+    padding: 1rem;
+}
+
+.socials a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: 1px solid #444;
+    border-radius: 22px;
+}
+
+.socials img {
+    width: 22px;
+    height: 22px;
+}
+
+.socials a:hover {
+    /* High Contrast: Light gray on hover for contrast with dark background */
+    background-color: #CCCCCC;
+}
+
+.last {
+    border-radius: 22px;
+    padding: 1rem;
+}
+
+/* RULES FOR THE HOMEPAGE */
+.hero {
+    margin-bottom: 2rem;
+    overflow: hidden; /* Ensures image doesn't bleed */
+    box-shadow: var(--shadow-elevated);
+    border-radius: 22px;
+}
+
+.hero img {
+    width: 100%;
+    height: 400px;
+    display: block;
+    object-fit: cover; /* Important for scaling */
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Caption text and Number text combined as they share color, size, padding, and position rule */
+.text,
+.numbertext {
+    color: #f2f2f2;
+    padding: 8px 12px;
+    position: absolute;
+}
+
+.text {
+    font-size: 15px;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext {
+    font-size: 12px;
+    top: 0;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+/* --- Discover Page Specific Styles --- */
+
+.demographics {
+    padding: 15px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.visit-message {
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #d4edda; /* Light green */
+    color: #155724; /* Dark green text */
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.card figure {
+    margin: 10px 0;
+    overflow: hidden; /* Important for containing image hover effect */
+    border-radius: 4px;
+}
+
+.card img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+    display: block;
+    /* Transition applied but effects are only activated on medium/large screens */
+    transition: transform 0.4s ease-in-out, filter 0.4s ease-in-out; 
+}
+
+.card button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: auto; 
+    transition: background-color 0.3s;
+}
+
+/* --- GRID LAYOUT: Small Screen (Mobile First) --- */
+.discover-grid {
+    display: grid;  
+    /* Single column for small screens */
+    grid-template-columns: 1fr;
+    gap: 20px;
+    /* Define 8 named areas in a single column */
+    grid-template-areas:
+        "item1"
+        "item2"
+        "item3"
+        "item4"
+        "item5"
+        "item6"
+        "item7"
+        "item8";
+}
+
+/* Assign areas to cards */
+#item1 { grid-area: item1; }
+#item2 { grid-area: item2; }
+#item3 { grid-area: item3; }
+#item4 { grid-area: item4; }
+#item5 { grid-area: item5; }
+#item6 { grid-area: item6; }
+#item7 { grid-area: item7; }
+#item8 { grid-area: item8; }
+
+
+/* --- MODAL DIALOG STYLES --- */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; 
+    z-index: 2000; /* Ensure it's on top of everything */
+    left: 0; 
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.7); /* Dark background overlay */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* 10% from the top and centered horizontally */
+    padding: 30px;
+    border: 1px solid #888;
+    width: 90%; 
+    max-width: 600px; /* Max width for readability */
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.close-button:hover, .close-button:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-figure {
+    margin: 15px 0;
+}
+
+.modal-figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.modal-link-button {
+    display: inline-block;
+    background-color: #28a745; /* Green color for the link button */
+    color: white;
+    padding: 10px 20px;
+    margin-top: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}

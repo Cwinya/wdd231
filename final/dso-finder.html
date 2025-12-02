@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="Astronomy, Deep Sky Objects, DSO, Finder, Telescope">
+    <meta name="author" content="Cwinya Moses">
+    <title>Stellar Travel | DSO Target Finder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/final.css">
+    <script src="scripts/final.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <nav role="navigation" aria-label="Main Navigation">
+            <h1>Stellar Travel</h1>
+            <ul>
+                <li><a href="final.html">Home</a></li>
+                <li><a href="#" aria-current="page">DSO Target Finder</a></li>
+                <li><a href="resources.html">Learning & Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2 id="finder-heading">Deep-Sky Object Finder</h2>
+            <p>Plan your night! Find galaxies, nebulae, and clusters visible from your location tonight.</p>
+        </section>
+
+        <section class="finder-layout">
+            
+            <div class="filter-sidebar">
+                <h2>Viewing Parameters</h2>
+                <form id="dso-filter-form" class="filter-form">
+                    
+                    <label for="location-input">Your Location (Lat/Lon or City):</label>
+                    <input type="text" id="location-input" placeholder="e.g., 34.05, -118.24 or Los Angeles">
+                    
+                    <button type="button" id="geo-button">Use My Current Location</button>
+
+                    <p id="location-status" style="font-size: 0.85rem; color: #aaa; margin-top: 10px;">Location not yet determined.</p>
+
+                    <label for="dso-type">Object Type:</label>
+                    <select id="dso-type">
+                        <option value="all">All</option>
+                        <option value="galaxy">Galaxy</option>
+                        <option value="nebula">Nebula</option>
+                        <option value="cluster">Star Cluster</option>
+                    </select>
+
+                    <label for="aperture">Min. Telescope Aperture (mm):</label>
+                    <input type="number" id="aperture" value="60" min="50" max="500">
+
+                    <button type="submit">Find Targets</button>
+                </form>
+            </div>
+            
+            <div class="dso-results">
+                <h2>Visible Targets Tonight <span id="target-count"></span></h2>
+                <p>Results based on your location, time, and chosen filters.</p>
+                
+                <div id="results-message" style="color: var(--color-secondary);">
+                    <p>Please enter your location and click 'Find Targets' to see visible Deep-Sky Objects.</p>
+                </div>
+
+                <table id="dso-table" class="dso-table visually-hidden">
+                    <thead>
+                        <tr>
+                            <th>Object Name</th>
+                            <th>Type</th>
+                            <th>Constellation</th>
+                            <th>Magnitude</th>
+                            <th>Equipment</th>
+                        </tr>
+                    </thead>
+                    <tbody id="dso-table-body">
+                        </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Stellar Travel (Deep Astronomy Project)</p>
+    </footer>
+</body>
+</html>

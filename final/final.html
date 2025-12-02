@@ -27,8 +27,25 @@
 
     <main>
         <section class="hero">
-            <h2 id="current-events-heading">Current Celestial Events</h2>
-            <p>Your portal to the cosmos. Discover the latest astronomical headlines and prepare for your next viewing night.</p>
+            <div class="hero-content">
+                <h2 id="current-events-heading">Current Celestial Events</h2>
+                <p>Your portal to the cosmos. Discover the latest astronomical headlines and prepare for your next viewing night.</p>
+            </div>
+            
+            <form id="cta-login-form" class="cta-login-form">
+                <h3>🌌 Login for Personalized Target Lists</h3>
+                <div class="form-group">
+                    <label for="cta-email" class="visually-hidden">Email</label>
+                    <input type="email" id="cta-email" placeholder="Enter Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="cta-password" class="visually-hidden">Password</label>
+                    <input type="password" id="cta-password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="cta-button" id="access-star-maps-btn">Access Star Maps</button>
+                <p class="signup-link">New user? <a href="#" id="open-registration-modal">Sign Up Here</a></p>
+            </form>
+            
         </section>
 
         <section class="astronomy-news">
@@ -39,8 +56,53 @@
         </section>
     </main>
 
+    <div id="item-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3 id="modal-title"></h3>
+            <div id="modal-body">
+                <figure class="modal-figure">
+                    <img id="modal-image" src="" alt="" width="300" height="200">
+                </figure>
+                <p id="modal-description"></p>
+                <address id="modal-address"></address>
+            </div>
+            <a href="#" id="modal-link" class="modal-link-button" target="_blank">Visit Official Site</a>
+        </div>
+    </div>
+
     <footer>
         <p>&copy; 2025 Stellar Travel (Deep Astronomy Project)</p>
     </footer>
+
+    <dialog id="registration-modal" class="modal">
+        <div id="modal-content">
+            <button id="close-modal" aria-label="Close Registration Form">&times;</button>
+            <form id="registration-form">
+                <h2>Register for Stellar Travel</h2>
+                <p>Get access to exclusive features like saving deep-sky targets!</p>
+                
+                <div class="form-group">
+                    <label for="reg-name">Full Name</label>
+                    <input type="text" id="reg-name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="reg-email">Email Address</label>
+                    <input type="email" id="reg-email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="reg-password">Password</label>
+                    <input type="password" id="reg-password" required minlength="8">
+                </div>
+
+                <button type="submit" class="cta-button">Complete Registration</button>
+            </form>
+            <div id="welcome-message" style="display:none;">
+                </div>
+        </div>
+    </dialog>
+
 </body>
-</html> 
+</html>

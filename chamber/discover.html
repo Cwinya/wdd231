@@ -14,14 +14,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single+Ink:wght@100..900&family=Lato:ital@0;1&family=Libertinus+Serif+Display&family=Lobster&family=Oleo+Script:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Homepage | The United Africa Chamber of Commerce</title>
+    <title>Discover Page | The United Africa Chamber of Commerce</title>
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/discover.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
-    <script src="scripts/home.js" defer></script>
+    <script type="module" src="scripts/discover.js" defer></script>
 </head>
 <body>
-     <header class="page-header">
+    <header class="page-header">
         <div class="logo">
             <img src="images/people-group-solid.svg" alt="Logo image" width="45" height="45">
         </div>
@@ -47,14 +48,14 @@
             <button id="ham-btn" class="hamburger"></button>
         </div>
     </header>
-
-    <main id="home-main">
-        <h1>Welcome to the World United Chamber of Commerce</h1>
+    
+    <main>
+        <h1>Discover and Learn More about Us</h1>
         <div class="hero">
             <div class="slideshow-container">
                 <div class="mySlides fade">
                     <div class="numbertext">1 / 3</div>
-                    <img src="images/london.jpg" alt="London Chamber of Commerce Image" width="100%" height="auto">
+                    <img src="images/london.jpg" alt="London Chamber of Commerce Image" width="100" height="100">
                     <div class="text">London Chamber of Commerce</div>
                 </div>
 
@@ -71,65 +72,32 @@
                 </div>
             </div>
         </div>
-        <div class="welcome">
-            <h2>👋 Welcome to the World United Africa Chamber of Commerce</h2>
-            <p>Join a global network dedicated to fostering international business growth and collaboration. We provide the resources, connections, and advocacy necessary for our members to thrive in the interconnected world economy. Unite, Grow, Succeed with us!</p>
-        </div>
-        <div class="introduction">
-            <div class="mission">
-                <h2>🌍 Mission & Key Benefits</h2>
-                <h3>🎯 Mission: Unifying Global Commerce</h3>
-                <p>The World United Chamber of Commerce is dedicated to fostering an environment of sustainable economic prosperity for its members across borders. Our mission is to:</p>
-                <ul>
-                    <li><strong>Be the Unified Voice:</strong>Advocate for a pro-business global climate, influencing international trade policies and regulations.</li>
-                    <li><strong>Promote Trade and Investment:</strong>Facilitate cross-border business relationships, market entry, and investment opportunities.</li>
-                    <li><strong>Advance Shared Prosperity:</strong>Provide resources and connections that enable businesses of all sizes to grow, innovate, and contribute to their local and global communities.</li>
-                </ul>
-            </div>
-            <div class="advocacy">
-                <h2>📢 Current Advocacy Priorities</h2>
-                <p>Global Chambers typically focus on policy areas that impact international trade, stability, and growth. Key priorities often include:</p>
-                <ul>
-                    <li><strong>Global Trade & Investment Facilitation:</strong>Advocating for the reduction of tariffs and non-tariff barriers, simplifying cross-border regulations, and promoting open investment systems.</li>
-                    <li><strong>Sustainable & Resilient Supply Chains:</strong>Pushing for policies that support the energy transition, reduce carbon emissions, and address ESG (Environmental, Social, and Governance) risks across global supply chains.</li>
-                    <li><strong>Digital Economy Governance:</strong>Influencing global standards for data privacy, cybersecurity, and cross-border data flows to ensure businesses can leverage new technologies securely and efficiently.</li>
-                </ul>
-            </div>
-        </div>
 
-        <div class="weather">
-            <div class="general card events" id="events-section">
-                <h2>Events</h2>
-                <h3>Upcoming Events</h3>
-                <article class="event">
-                    <h4>Annual Business Networking Gala</h4>
-                    <p>Date: October 25th, 6:00 PM</p>
-                    <p>Location: Grand Ballroom | <a href="#">Details</a></p>
-                </article>
-                <article class="event">
-                    <h4>Small Business Workshop: Digital Marketing</h4>
-                    <p>Date: November 10th, 9:00 AM</p>
-                    <p>Location: Chamber Office | <a href="#">Details</a></p>
-                </article>
-                <a href="#" class="view-all-link">View All Events →</a>
-            </div>
-            <div class="general shared-quarter current-weather card">
-                <h2>Current Weather</h2>
-                <img id="weather-icon" src="images/contrasts.svg" alt="Weather Icon" width="45" height="45">
-                <p>Temperature: <span id="current-temp">--°F</span></p>
-                <p id="weather-desc">Loading...</p>
-            </div>
-
-            <div class="general shared-quarter card">
-                <h2>Weather Forecast</h2>
-                <div id="forecast-container">
-                    <p>Forecast loading...</p>
-                </div>
-            </div>
-    </div>
-    <div id="spotlights-section" class="business">
-    </div>
+        <h2>Explore Cityville: A Place to Grow</h2>
+        <div id="visit-message" class="visit-message"></div>
+        
+        <section class="demographics">
+            <h3>📈 City Demographics and Facts</h3>
+            <p>Population: **450,000** | Median Household Income: **$72,000** | Major Industries: **Technology, Education, Tourism**.</p>
+        </section>
+        
+        <div class="discover-grid"></div>
     </main>
+
+    <div id="item-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3 id="modal-title"></h3>
+            <div id="modal-body">
+                <figure class="modal-figure">
+                    <img id="modal-image" src="" alt="" width="300" height="200">
+                </figure>
+                <p id="modal-description"></p>
+                <address id="modal-address"></address>
+            </div>
+            <a href="#" id="modal-link" class="modal-link-button" target="_blank">Visit Official Site</a>
+        </div>
+    </div>
 
     <footer>
         <section>

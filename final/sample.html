@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stellar Travel | Astronomy News</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS is included here */
+        :root {
+            --color-primary: #0a1930;
+            --color-secondary: #00bcd4;
+            --color-light: #f4f4f9;
+            --color-accent: #ff9800;
+            --font-main: 'Roboto', sans-serif;
+            --font-code: 'Space Mono', monospace;
+        }
+
+        body {
+            font-family: var(--font-main);
+            margin: 0;
+            padding: 0;
+            background-color: var(--color-primary);
+            color: var(--color-light);
+            line-height: 1.6;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 1rem 5%;
+            border-bottom: 3px solid var(--color-secondary);
+        }
+
+        header h1 {
+            margin: 0;
+            font-family: var(--font-code);
+            color: var(--color-light);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: var(--color-light);
+            text-decoration: none;
+            font-weight: 700;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--color-secondary);
+        }
+
+        main {
+            padding: 2rem 5%;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+            background-image: linear-gradient(rgba(10, 25, 48, 0.8), rgba(10, 25, 48, 0.8)), url('https://picsum.photos/1200/400?blur=5'); /* Placeholder image */
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            color: var(--color-accent);
+            margin-top: 0;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .news-item {
+            background-color: #1a2c4a;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+        }
+
+        .news-item:hover {
+            transform: translateY(-5px);
+            border-left: 5px solid var(--color-secondary);
+        }
+
+        .news-item h3 {
+            color: var(--color-secondary);
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+
+        .news-item p {
+            font-size: 0.95rem;
+            color: #ccc;
+        }
+
+        .news-item a {
+            color: var(--color-accent);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .loading-message {
+            text-align: center;
+            font-size: 1.5rem;
+            padding: 50px;
+            color: var(--color-accent);
+        }
+
+        /* Accessibility improvements (Course Outcome) */
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            padding: 0;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav role="navigation" aria-label="Main Navigation">
+            <h1>Stellar Travel</h1>
+            <ul>
+                <li><a href="#" aria-current="page">Home</a></li>
+                <li><a href="dso-finder.html">DSO Target Finder</a></li>
+                <li><a href="resources.html">Learning & Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2 id="current-events-heading">Current Celestial Events</h2>
+            <p>Your portal to the cosmos. Discover the latest astronomical headlines and prepare for your next viewing night.</p>
+        </section>
+
+        <section class="astronomy-news">
+            <h2 class="visually-hidden">Latest News</h2>
+            <div id="news-container" class="news-grid">
+                <p class="loading-message">Loading astronomical news... (Simulated API Fetch)</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Stellar Travel (Deep Astronomy Project)</p>
+    </footer>
+
+    <script>
+        // JavaScript is included here
+        document.addEventListener('DOMContentLoaded', () => {
+            const newsContainer = document.getElementById('news-container');
+            
+            // --- MOCK API DATA (Simulating a successful JSON response) ---
+            const mockNewsData = [
+                {
+                    title: "Perseids Meteor Shower Peaks Tonight!",
+                    date: "August 12, 2025",
+                    summary: "The annual Perseids shower will reach its maximum rate, offering up to 100 meteors per hour in dark sky locations. Be sure to look northeast after midnight.",
+                    source: "NASA/JPL",
+                    link: "#"
+                },
+                {
+                    title: "Mars and Jupiter in Close Conjunction",
+                    date: "September 5, 2025",
+                    summary: "The two gas giants will be separated by less than half a degree in the evening sky, a spectacular sight for binoculars or small telescopes.",
+                    source: "Sky & Telescope",
+                    link: "#"
+                },
+                {
+                    title: "Webb Telescope Captures New Image of Pillars of Creation",
+                    date: "October 20, 2025",
+                    summary: "The James Webb Space Telescope released a stunning infrared view of the famous star-forming region in the Eagle Nebula.",
+                    source: "ESA/Hubble",
+                    link: "#"
+                }
+            ];
+
+            /**
+             * Function to simulate fetching data from a Remote API
+             * * Course Outcome Relevance: This demonstrates the core logic
+             * for the 'Dynamic Websites/Remote APIs' requirement using a Promise.
+             */
+            function fetchAstronomyNews() {
+                // In a real application, you would replace this with:
+                // fetch('YOUR_API_ENDPOINT_HERE')
+                // .then(response => {
+                //     if (!response.ok) {
+                //         throw new Error('Network response was not ok');
+                //     }
+                //     return response.json(); // Handling JSON data
+                // })
+                // .then(data => {
+                //     displayNews(data);
+                // })
+                // .catch(error => {
+                //     console.error('Error fetching data:', error);
+                //     newsContainer.innerHTML = '<p class="loading-message" style="color:red;">Failed to load news. Try again later.</p>';
+                // });
+
+
+                // --- Simulation with a delay to show 'Loading' message ---
+                return new Promise(resolve => {
+                    setTimeout(() => {
+                        resolve(mockNewsData);
+                    }, 1500); // Simulate network delay
+                });
+            }
+
+            /**
+             * Function to display the fetched news items on the page.
+             */
+            function displayNews(newsArray) {
+                newsContainer.innerHTML = ''; // Clear the loading message
+                
+                newsArray.forEach(item => {
+                    const newsItem = document.createElement('article');
+                    newsItem.className = 'news-item';
+                    newsItem.setAttribute('role', 'article'); // Accessibility role
+
+                    newsItem.innerHTML = `
+                        <h3>${item.title}</h3>
+                        <p><strong>Date:</strong> ${item.date}</p>
+                        <p>${item.summary}</p>
+                        <p><a href="${item.link}" target="_blank" aria-label="Read more about ${item.title}">Read More (Source: ${item.source})</a></p>
+                    `;
+                    newsContainer.appendChild(newsItem);
+                });
+            }
+
+            // Execute the API fetching function
+            fetchAstronomyNews()
+                .then(data => {
+                    displayNews(data);
+                });
+        });
+    </script>
+</body>
+</html>

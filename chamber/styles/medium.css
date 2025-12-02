@@ -1,0 +1,54 @@
+/* --- GRID LAYOUT: Medium Screens (641px to 1024px) --- */
+@media (min-width: 768px) {
+    .discover-grid {
+        /* Two columns */
+        grid-template-columns: 1fr 1fr;
+        /* Redefine areas to flow naturally in a 2-column layout */
+        grid-template-areas:
+            "item1 item2"
+            "item3 item4"
+            "item5 item6"
+            "item7 item8";
+    }
+
+    /* CSS Hover Effect for Medium and Large screens */
+    .card:hover img {
+        /* Zoom effect */
+        transform: scale(1.05); 
+        /* Filter effect (darken and slight sepia/monotone) */
+        filter: brightness(80%) grayscale(40%); 
+        cursor: pointer;
+    }
+}
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .page-title {
+        font-size: 2rem;
+    }
+    
+    .nav-links {
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .form-row {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 768px) {
+    .summary-row {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1024px) {
+    .join-grid {
+        grid-template-columns: 2fr 1fr;
+    }
+}
