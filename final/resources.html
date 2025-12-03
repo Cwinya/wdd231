@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/final.css">
+    <script src="scripts/final.js"></script>
 </head>
 <body>
 
@@ -76,9 +77,24 @@
                     </ul>
                 </div>
             </section>
+            
+            <!-- Dynamic Content Section -->
+            <section id="object-catalog" aria-labelledby="catalog-header">
+                <h2 id="catalog-header">Deep Sky Wonders Catalog (25 Objects)</h2>
+                <p>A collection of spectacular galaxies, nebulae, and star clusters, detailing their composition and key statistics. Data loaded dynamically from JSON.</p>
+
+                <!-- Cards will be inserted here by JavaScript -->
+                <div class="celestial-cards" id="celestial-cards-container">
+                    <!-- Initial Loading Indicator -->
+                    <div class="loading-container">
+                        <div class="spinner"></div>
+                        <p>Loading celestial object data...</p>
+                    </div>
+                </div>
+            </section>
+
         </div>
     </main>
-
     <footer>
         <p>&copy; 2025 Stellar Travel (Deep Astronomy Project)</p>
     </footer>

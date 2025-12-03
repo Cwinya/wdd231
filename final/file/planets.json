@@ -1,0 +1,330 @@
+[
+  {
+    "id": "M31",
+    "name": "Andromeda Galaxy",
+    "type": "Galaxy",
+    "image_text": "M31 - Galaxy",
+    "distance": "2.53 million light-years",
+    "gases": "Hydrogen, Helium, trace amounts of metals.",
+    "facts": [
+      "The largest galaxy in the Local Group.",
+      "It is on a collision course with the Milky Way, expected in about 4.5 billion years.",
+      "The most distant object visible to the naked eye."
+    ],
+    "image_url": "images/m31.webp"
+  },
+  {
+    "id": "M42",
+    "name": "Orion Nebula",
+    "type": "Nebula",
+    "image_text": "M42 - Nebula",
+    "distance": "1,344 light-years",
+    "gases": "Ionized Hydrogen, Oxygen, Sulfur.",
+    "facts": [
+      "A massive stellar nursery where new stars are actively being formed.",
+      "Contains the Trapezium cluster, a tight grouping of young, hot stars.",
+      "One of the brightest nebulae and easy to spot in the winter sky."
+    ],
+    "image_url": "images/m42.webp"
+  },
+  {
+    "id": "M45",
+    "name": "Pleiades Cluster",
+    "type": "Cluster",
+    "image_text": "M45 - Cluster",
+    "distance": "444 light-years",
+    "gases": "Interstellar dust and gas (mainly Hydrogen).",
+    "facts": [
+      "Also known as the Seven Sisters.",
+      "An open star cluster dominated by hot, blue luminous stars.",
+      "Used as a time marker by ancient cultures worldwide."
+    ],
+    "image_url": "images/m45.webp"
+  },
+  {
+    "id": "M1",
+    "name": "Crab Nebula",
+    "type": "Nebula",
+    "image_text": "M1 - Nebula",
+    "distance": "6,500 light-years",
+    "gases": "Hydrogen, Helium, traces of heavier elements (e.g., Oxygen, Neon).",
+    "facts": [
+      "A supernova remnant resulting from an explosion observed in 1054 AD.",
+      "Contains a pulsar (a rapidly spinning neutron star) at its center."
+    ],
+    "image_url": "images/m1.webp"
+  },
+  {
+    "id": "M51",
+    "name": "Whirlpool Galaxy",
+    "type": "Galaxy",
+    "image_text": "M51 - Galaxy",
+    "distance": "31 million light-years",
+    "gases": "Hydrogen, Molecular clouds, Carbon Monoxide.",
+    "facts": [
+      "One of the most famous examples of a grand-design spiral galaxy.",
+      "It is currently interacting and merging with its smaller neighbor, NGC 5195."
+    ],
+    "image_url": "images/m51.webp"
+  },
+  {
+    "id": "M57",
+    "name": "Ring Nebula",
+    "type": "Nebula",
+    "image_text": "M57 - Nebula",
+    "distance": "2,300 light-years",
+    "gases": "Oxygen (green), Nitrogen (red), Helium.",
+    "facts": [
+      "A classic example of a planetary nebula, the final stage of a Sun-like star.",
+      "The \"smoke ring\" appearance is caused by a shell of gas ejected from the central white dwarf."
+    ],
+    "image_url": "images/m57.webp"
+  },
+  {
+    "id": "M13",
+    "name": "Hercules Globular Cluster",
+    "type": "Cluster",
+    "image_text": "M13 - Cluster",
+    "distance": "22,200 light-years",
+    "gases": "Extremely low concentration; mainly very old, dense stars.",
+    "facts": [
+      "One of the most spectacular globular clusters in the Northern Hemisphere.",
+      "Contains several hundred thousand stars tightly bound by gravity."
+    ],
+    "image_url": "images/m13.webp"
+  },
+  {
+    "id": "M8",
+    "name": "Lagoon Nebula",
+    "type": "Nebula",
+    "image_text": "M8 - Nebula",
+    "distance": "5,200 light-years",
+    "gases": "Ionized Hydrogen, dust, and dark lanes of dust (the 'Lagoon').",
+    "facts": [
+      "A large interstellar cloud in the constellation Sagittarius.",
+      "Visible to the naked eye under dark skies due to its size."
+    ],
+    "image_url": "images/m8.webp"
+  },
+  {
+    "id": "M33",
+    "name": "Triangulum Galaxy",
+    "type": "Galaxy",
+    "image_text": "M33 - Galaxy",
+    "distance": "3 million light-years",
+    "gases": "Hydrogen, Helium, active star-forming regions (H II regions).",
+    "facts": [
+      "The third-largest galaxy in the Local Group (after Andromeda and the Milky Way).",
+      "It is a face-on spiral, making its structure difficult to see but its overall size impressive."
+    ],
+    "image_url": "images/m33.webp"
+  },
+  {
+    "id": "M17",
+    "name": "Swan Nebula",
+    "type": "Nebula",
+    "image_text": "M17 - Nebula",
+    "distance": "5,000 light-years",
+    "gases": "Hydrogen, Sulfur, Oxygen.",
+    "facts": [
+      "Named for its resemblance to a swan or checkmark shape.",
+      "One of the most active and massive star-forming regions in our galaxy."
+    ],
+    "image_url": "images/m17.webp"
+  },
+  {
+    "id": "M101",
+    "name": "Pinwheel Galaxy",
+    "type": "Galaxy",
+    "image_text": "M101 - Galaxy",
+    "distance": "21 million light-years",
+    "gases": "Primarily Hydrogen and Helium in arms.",
+    "facts": [
+      "A large, beautiful face-on spiral galaxy in the constellation Ursa Major.",
+      "It hosts exceptionally large and bright H II regions (star-forming areas)."
+    ],
+    "image_url": "images/m101.webp"
+  },
+  {
+    "id": "M97",
+    "name": "Owl Nebula",
+    "type": "Nebula",
+    "image_text": "M97 - Nebula",
+    "distance": "2,030 light-years",
+    "gases": "Oxygen (central region), Hydrogen (outer shell).",
+    "facts": [
+      "A planetary nebula named for its two dark, owl-like 'eyes'.",
+      "It is faint and requires a large telescope and dark skies to observe well."
+    ],
+    "image_url": "images/m97.webp"
+  },
+  {
+    "id": "Abell 1656",
+    "name": "Coma Cluster",
+    "type": "Cluster",
+    "image_text": "Abell 1656 - Cluster",
+    "distance": "336 million light-years",
+    "gases": "Massive amounts of X-ray-emitting intergalactic gas.",
+    "facts": [
+      "One of the nearest rich clusters of galaxies to the Milky Way.",
+      "Contains thousands of galaxies, mostly ellipticals."
+    ],
+    "image_url": "images/abell.webp"
+  },
+  {
+    "id": "M27",
+    "name": "Dumbbell Nebula",
+    "type": "Nebula",
+    "image_text": "M27 - Nebula",
+    "distance": "1,360 light-years",
+    "gases": "Ionized Helium, Hydrogen, Nitrogen.",
+    "facts": [
+      "The first planetary nebula ever discovered (by Charles Messier in 1764).",
+      "The nebula appears brighter and more colorful in telescopes than most planetary nebulae."
+    ],
+    "image_url": "images/m27.webp"
+  },
+  {
+    "id": "M104",
+    "name": "Sombrero Galaxy",
+    "type": "Galaxy",
+    "image_text": "M104 - Galaxy",
+    "distance": "29.3 million light-years",
+    "gases": "Dust lane rich in molecular gas.",
+    "facts": [
+      "Named for its resemblance to a wide-brimmed hat.",
+      "Has an unusually large and bright central bulge."
+    ],
+    "image_url": "images/m104.webp"
+  },
+  {
+    "id": "NGC 4755",
+    "name": "Jewel Box Cluster",
+    "type": "Cluster",
+    "image_text": "NGC 4755 - Cluster",
+    "distance": "6,400 light-years",
+    "gases": "Very young, hot star environment.",
+    "facts": [
+      "One of the youngest known open clusters, located in the Southern Cross.",
+      "Features contrasting colors: brilliant blue, white, and red stars."
+    ],
+    "image_url": "images/ngc.webp"
+  },
+  {
+    "id": "NGC 6960",
+    "name": "Veil Nebula",
+    "type": "Nebula",
+    "image_text": "NGC 6960 - Nebula",
+    "distance": "2,400 light-years",
+    "gases": "Oxygen, Hydrogen, Sulfur (expanding supernova shock wave).",
+    "facts": [
+      "Part of the much larger Cygnus Loop supernova remnant.",
+      "The entire structure spans over 6 times the diameter of the full Moon."
+    ],
+    "image_url": "images/ngc6960.webp"
+  },
+  {
+    "id": "M81",
+    "name": "Bode's Galaxy",
+    "type": "Galaxy",
+    "image_text": "M81 - Galaxy",
+    "distance": "12 million light-years",
+    "gases": "Cold molecular gas clouds.",
+    "facts": [
+      "A grand spiral galaxy visible with binoculars in dark skies.",
+      "Forms a famous pair with its smaller, distorted neighbor, M82."
+    ],
+    "image_url": "images/m81.webp"
+  },
+  {
+    "id": "M82",
+    "name": "Cigar Galaxy",
+    "type": "Galaxy",
+    "image_text": "M82 - Galaxy",
+    "distance": "12 million light-years",
+    "gases": "Reddish Hydrogen filaments being violently ejected.",
+    "facts": [
+      "A spectacular starburst galaxy, forming stars ten times faster than the Milky Way.",
+      "Its shape is distorted due to gravitational interaction with M81."
+    ],
+    "image_url": "images/m82.webp"
+  },
+  {
+    "id": "NGC 7635",
+    "name": "Bubble Nebula",
+    "type": "Nebula",
+    "image_text": "NGC 7635 - Nebula",
+    "distance": "7,100 light-years",
+    "gases": "Stellar wind-shocked Hydrogen and Oxygen.",
+    "facts": [
+      "The \"bubble\" is caused by intense stellar wind from a massive, hot central star.",
+      "The star generating the bubble is about 45 times the mass of the Sun."
+    ],
+    "image_url": "images/ngc7635.webp"
+  },
+  {
+    "id": "Omega Centauri",
+    "name": "Omega Centauri",
+    "type": "Cluster",
+    "image_text": "Omega Centauri - Cluster",
+    "distance": "15,800 light-years",
+    "gases": "Very little gas; remnant of a small galaxy.",
+    "facts": [
+      "The largest and brightest globular cluster known in the Milky Way.",
+      "Believed to be the core remnant of a dwarf galaxy absorbed by our own."
+    ],
+    "image_url": "images/omega.webp"
+  },
+  {
+    "id": "SMC",
+    "name": "Small Magellanic Cloud",
+    "type": "Galaxy",
+    "image_text": "SMC - Galaxy",
+    "distance": "200,000 light-years",
+    "gases": "Large amounts of neutral Hydrogen gas (H I).",
+    "facts": [
+      "A dwarf galaxy orbiting the Milky Way, only visible from the Southern Hemisphere.",
+      "It is tidally disrupted, showing a distorted, irregular shape."
+    ],
+    "image_url": "images/smc.webp"
+  },
+  {
+    "id": "Barnard 33",
+    "name": "Horsehead Nebula",
+    "type": "Nebula",
+    "image_text": "Barnard 33 - Nebula",
+    "distance": "1,500 light-years",
+    "gases": "Cold dust and dense Hydrogen gas (appears dark).",
+    "facts": [
+      "A dark nebula that gets its shape from being silhouetted against a bright emission nebula.",
+      "It is part of the much larger Orion Molecular Cloud Complex."
+    ],
+    "image_url": "images/barnard33.webp"
+  },
+  {
+    "id": "NGC 2392",
+    "name": "Eskimo Nebula",
+    "type": "Nebula",
+    "image_text": "NGC 2392 - Nebula",
+    "distance": "6,500 light-years",
+    "gases": "Oxygen (inner ring), Nitrogen/Hydrogen (outer filaments).",
+    "facts": [
+      "A planetary nebula with two elliptical rings resembling a face surrounded by a fur hood.",
+      "The inner ring is expanding at about 60,000 km/h."
+    ],
+    "image_url": "images/ngc2392.webp"
+  },
+  {
+    "id": "NGC 3372",
+    "name": "Carina Nebula",
+    "type": "Nebula",
+    "image_text": "NGC 3372 - Nebula",
+    "distance": "7,500 light-years",
+    "gases": "Ionized Hydrogen, molecular clouds, dark dust.",
+    "facts": [
+      "One of the largest diffuse nebulae in the sky, much larger than the Orion Nebula.",
+      "Home to the massive, unstable star Eta Carinae."
+    ],
+    "image_url": "images/ngc3372.webp"
+  }
+]

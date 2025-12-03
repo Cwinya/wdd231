@@ -203,3 +203,247 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+
+
+// final.js
+// Implements the Deep Sky Object finder application, fetching data from final.json.
+
+let ALL_DSO_DATA = []; // Initialize as an empty array to hold the fetched JSON data
+let currentDSOs = ALL_DSO_DATA;
+
+// DOM elements
+const dsoListBody = document.getElementById('dso-list');
+const resultCountSpan = document.getElementById('result-count');
+const typeSelect = document.getElementById('object-type');
+const constelationSelect = document.getElementById('constellation');
+const filterForm = document.getElementById('filter-form');
+const resetButton = document.getElementById('reset-button');
+
+/**
+ * Renders the filtered list of DSOs into the table body.
+ * @param {Array<Object>} data - The array of Deep Sky Objects to display.
+ */
+function renderResults(data) {
+    dsoListBody.innerHTML = ''; // Clear existing rows
+    resultCountSpan.textContent = data.length;
+
+    if (data.length === 0) {
+        dsoListBody.innerHTML = '<tr><td colspan="5" style="text-align: center; color: var(--color-accent);">No objects found matching the criteria. Try broadening your search!</td></tr>';
+        return;
+    }
+
+    data.forEach(dso => {
+        const row = dsoListBody.insertRow();
+        row.innerHTML = `
+            <td>${dso.name}</td>
+            <td>${dso.designation}</td>
+            <td>${dso.type}</td>
+            <td>${dso.constellation}</td>
+            <td>${dso.magnitude}</td>
+        `;
+    });
+    currentDSOs = data; // Update the current list
+}
+
+/**
+ * Function to fetch data from the designated JSON file.
+ * This uses the correct relative path (../final.json) to access the file from the parent directory.
+ */
+async function fetchDSOData() {
+    try {
+        const response = await fetch('file/final.json'); 
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        // The data is successfully loaded into the global variable
+        ALL_DSO_DATA = await response.json();
+        
+    } catch (error) {
+        console.error("Could not fetch DSO data. Ensure 'final.json' is located in the parent folder (../final.json).", error);
+        // Fallback or display error message to user
+        dsoListBody.innerHTML = '<tr><td colspan="5" style="text-align: center; color: red;">Error loading data. Check console for details.</td></tr>';
+        return false; // Indicate failure
+    }
+    return true; // Indicate success
+}
+
+
+/**
+ * Populates the filter dropdowns (Type and Constellation) based on unique values in the data.
+ */
+function populateFilters() {
+    // Ensure ALL_DSO_DATA is an array and not empty before populating filters
+    if (!Array.isArray(ALL_DSO_DATA) || ALL_DSO_DATA.length === 0) return;
+
+    // 1. Populate Object Type Filter
+    const types = [...new Set(ALL_DSO_DATA.map(dso => dso.type))].sort();
+    types.forEach(type => {
+        const option = document.createElement('option');
+        option.value = type;
+        option.textContent = type;
+        typeSelect.appendChild(option);
+    });
+    
+    // 2. Populate Constellation Filter
+    const constellations = [...new Set(ALL_DSO_DATA.map(dso => dso.constellation))].sort();
+    constellations.forEach(constellation => {
+        const option = document.createElement('option');
+        option.value = constellation;
+        option.textContent = constellation;
+        constelationSelect.appendChild(option);
+    });
+}
+
+/**
+ * Filters the ALL_DSO_DATA based on the current selection in the dropdowns.
+ */
+function filterDSOs(event) {
+    // Prevent default form submission if triggered by the submit button
+    if (event) event.preventDefault(); 
+    
+    const selectedType = typeSelect.value;
+    const selectedConstellation = constelationSelect.value;
+    
+    let filteredData = ALL_DSO_DATA;
+
+    // Filter by Type
+    if (selectedType !== 'All') {
+        filteredData = filteredData.filter(dso => dso.type === selectedType);
+    }
+    
+    // Filter by Constellation
+    if (selectedConstellation !== 'All') {
+        filteredData = filteredData.filter(dso => dso.constellation === selectedConstellation);
+    }
+    
+    renderResults(filteredData);
+}
+
+/**
+ * Resets the form and re-renders all data.
+ */
+function resetFilters() {
+    typeSelect.value = 'All';
+    constelationSelect.value = 'All';
+    renderResults(ALL_DSO_DATA);
+}
+
+/**
+ * Initialization function
+ * Note: Must be async to wait for the data fetch operation to complete.
+ */
+async function initFinder() {
+    // 1. Load data and wait for it to complete
+    const dataLoaded = await fetchDSOData();
+    
+    if (!dataLoaded) {
+        // Data loading failed, stop initialization
+        return; 
+    }
+
+    // 2. Setup Listeners
+    filterForm.addEventListener('submit', filterDSOs);
+    resetButton.addEventListener('click', resetFilters);
+    
+    // 3. Populate filters and display all data initially
+    populateFilters();
+    renderResults(ALL_DSO_DATA);
+}
+
+// Run initialization once the DOM is fully loaded
+document.addEventListener('DOMContentLoaded', initFinder);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const container = document.getElementById('celestial-cards-container');
+
+    /**
+     * Generates the HTML string for a single celestial object card.
+     * @param {object} object - The celestial object data.
+     * @returns {string} The HTML string for the card.
+     */
+    function createCardHTML(object) {
+        const factList = object.facts.map(fact => `
+            <li>${fact}</li>
+        `).join('');
+
+        // We include the object ID in the header title for clarity, matching the original format.
+        const titleText = `${object.name} (${object.id})`;
+
+        return `
+            <div class="card" data-id="${object.id}">
+                <div class="card-image">
+                    <img src="${object.image_url}" alt="${object.image_text}" loading="lazy" width=350 height=300>
+                </div>
+                <div class="card-content">
+                    <h3>${titleText}</h3>
+                    <p><span class="fact-label">Distance:</span> ${object.distance}</p>
+                    <p><span class="fact-label">Gases Present:</span> ${object.gases}</p>
+                    <ul class="fact-list">
+                        ${factList}
+                    </ul>
+                </div>
+            </div>
+        `;
+    }
+
+    /**
+     * Fetches the JSON data and renders the cards.
+     */
+    async function loadCelestialObjects() {
+        // The JSON file must be available at this path for the fetch to succeed
+        const jsonPath = 'file/planets.json';
+        
+        try {
+            const response = await fetch(jsonPath);
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            const objects = await response.json();
+            
+            // Clear the loading indicator
+            container.innerHTML = ''; 
+
+            // Render all cards
+            const cardsHTML = objects.map(createCardHTML).join('');
+            container.innerHTML = cardsHTML;
+
+        } catch (error) {
+            console.error('Failed to load celestial objects:', error);
+            container.innerHTML = `
+                <div class="loading-container" style="color: #f87171;">
+                    <p>Error loading catalog data: ${error.message}. Please check the JSON file path and ensure it's correct.</p>
+                </div>
+            `;
+        }
+    }
+
+    loadCelestialObjects();
+});

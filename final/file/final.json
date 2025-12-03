@@ -1,23 +1,242 @@
 [
     {
-        "title": "Perseids Meteor Shower Peaks Tonight!",
-        "date": "August 12, 2025",
-        "summary": "The annual Perseids shower will reach its maximum rate, offering up to 100 meteors per hour in dark sky locations. Be sure to look northeast after midnight.",
-        "source": "NASA/JPL",
-        "link": "#"
+        "name": "Andromeda Galaxy",
+        "designation": "M31",
+        "type": "Galaxy",
+        "constellation": "Andromeda",
+        "magnitude": 3.4,
+        "description": "The closest large spiral galaxy to the Milky Way, visible to the naked eye under dark skies."
     },
     {
-        "title": "Mars and Jupiter in Close Conjunction",
-        "date": "September 5, 2025",
-        "summary": "The two gas giants will be separated by less than half a degree in the evening sky, a spectacular sight for binoculars or small telescopes.",
-        "source": "Sky & Telescope",
-        "link": "#"
+        "name": "Whirlpool Galaxy",
+        "designation": "M51",
+        "type": "Galaxy",
+        "constellation": "Canes Venatici",
+        "magnitude": 8.4,
+        "description": "A classic spiral galaxy, notable for its clearly defined spiral structure and companion galaxy."
     },
     {
-        "title": "Webb Telescope Captures New Image of Pillars of Creation",
-        "date": "October 20, 2025",
-        "summary": "The James Webb Space Telescope released a stunning infrared view of the famous star-forming region in the Eagle Nebula.",
-        "source": "ESA/Hubble",
-        "link": "#"
+        "name": "Pinwheel Galaxy",
+        "designation": "M101",
+        "type": "Galaxy",
+        "constellation": "Ursa Major",
+        "magnitude": 7.5,
+        "description": "A grand design spiral galaxy, one of the largest and most detailed on the Messier list."
+    },
+    {
+        "name": "Triangulum Galaxy",
+        "designation": "M33",
+        "type": "Galaxy",
+        "constellation": "Triangulum",
+        "magnitude": 5.7,
+        "description": "The third-largest member of the Local Group of galaxies, fainter but large in angular size."
+    },
+    {
+        "name": "Bode's Galaxy",
+        "designation": "M81",
+        "type": "Galaxy",
+        "constellation": "Ursa Major",
+        "magnitude": 6.9,
+        "description": "A grand spiral galaxy, famous for its perfect spiral arms and active star formation."
+    },
+    {
+        "name": "Cigar Galaxy",
+        "designation": "M82",
+        "type": "Galaxy",
+        "constellation": "Ursa Major",
+        "magnitude": 8.4,
+        "description": "A starburst galaxy with a massive rate of star formation, interacting with M81."
+    },
+    {
+        "name": "Sombrero Galaxy",
+        "designation": "M104",
+        "type": "Galaxy",
+        "constellation": "Virgo",
+        "magnitude": 8.0,
+        "description": "A spiral galaxy notable for its prominent dust lane and high surface brightness."
+    },
+    {
+        "name": "Black Eye Galaxy",
+        "designation": "M64",
+        "type": "Galaxy",
+        "constellation": "Coma Berenices",
+        "magnitude": 8.5,
+        "description": "Known for its spectacular dark band of dust obscuring the bright nucleus."
+    },
+    {
+        "name": "Centaurus A",
+        "designation": "NGC 5128",
+        "type": "Galaxy",
+        "constellation": "Centaurus",
+        "magnitude": 6.8,
+        "description": "A prominent elliptical galaxy and one of the closest radio galaxies to Earth."
+    },
+    {
+        "name": "Sculptor Galaxy",
+        "designation": "NGC 253",
+        "type": "Galaxy",
+        "constellation": "Sculptor",
+        "magnitude": 7.1,
+        "description": "A large and bright starburst spiral galaxy in the Sculptor Group."
+    },
+    {
+        "name": "Orion Nebula",
+        "designation": "M42",
+        "type": "Nebula",
+        "constellation": "Orion",
+        "magnitude": 4.0,
+        "description": "A vast region of star formation, easily the brightest diffuse nebula in the sky."
+    },
+    {
+        "name": "Ring Nebula",
+        "designation": "M57",
+        "type": "Nebula",
+        "constellation": "Lyra",
+        "magnitude": 8.8,
+        "description": "A prominent planetary nebula, the remnant of a star that shed its outer layers."
+    },
+    {
+        "name": "Lagoon Nebula",
+        "designation": "M8",
+        "type": "Nebula",
+        "constellation": "Sagittarius",
+        "magnitude": 6.0,
+        "description": "A giant interstellar cloud and H II region where active star formation is occurring."
+    },
+    {
+        "name": "Crab Nebula",
+        "designation": "M1",
+        "type": "Nebula",
+        "constellation": "Taurus",
+        "magnitude": 8.4,
+        "description": "A supernova remnant from a star explosion witnessed in 1054 AD."
+    },
+    {
+        "name": "Dumbbell Nebula",
+        "designation": "M27",
+        "type": "Nebula",
+        "constellation": "Vulpecula",
+        "magnitude": 7.5,
+        "description": "The first planetary nebula ever discovered, resembling an hourglass or dumbbell shape."
+    },
+    {
+        "name": "Helix Nebula",
+        "designation": "NGC 7293",
+        "type": "Nebula",
+        "constellation": "Aquarius",
+        "magnitude": 7.3,
+        "description": "One of the closest planetary nebulae, earning it the nickname 'The Eye of God'."
+    },
+    {
+        "name": "North America Nebula",
+        "designation": "NGC 7000",
+        "type": "Nebula",
+        "constellation": "Cygnus",
+        "magnitude": 4.0,
+        "description": "A large emission nebula whose shape resembles the continent of North America."
+    },
+    {
+        "name": "Veil Nebula",
+        "designation": "NGC 6960/6992",
+        "type": "Nebula",
+        "constellation": "Cygnus",
+        "magnitude": 7.0,
+        "description": "A large, faint supernova remnant in the constellation Cygnus."
+    },
+    {
+        "name": "Cat's Eye Nebula",
+        "designation": "NGC 6543",
+        "type": "Nebula",
+        "constellation": "Draco",
+        "magnitude": 9.8,
+        "description": "One of the most complex planetary nebulae, known for its intricate structure."
+    },
+    {
+        "name": "Trifid Nebula",
+        "designation": "M20",
+        "type": "Nebula",
+        "constellation": "Sagittarius",
+        "magnitude": 6.3,
+        "description": "A combination of an open cluster, an emission nebula, a reflection nebula, and a dark nebula."
+    },
+    {
+        "name": "Rosette Nebula",
+        "designation": "NGC 2237",
+        "type": "Nebula",
+        "constellation": "Monoceros",
+        "magnitude": 6.0,
+        "description": "A large, roughly circular star-forming region whose appearance resembles a rose."
+    },
+    {
+        "name": "Pleiades Cluster",
+        "designation": "M45",
+        "type": "Cluster",
+        "constellation": "Taurus",
+        "magnitude": 1.6,
+        "description": "One of the most famous open star clusters, known as the 'Seven Sisters'."
+    },
+    {
+        "name": "Hercules Globular Cluster",
+        "designation": "M13",
+        "type": "Cluster",
+        "constellation": "Hercules",
+        "magnitude": 5.8,
+        "description": "One of the largest and brightest globular clusters visible in the northern sky."
+    },
+    {
+        "name": "Double Cluster",
+        "designation": "NGC 869/884",
+        "type": "Cluster",
+        "constellation": "Perseus",
+        "magnitude": 3.7,
+        "description": "Two dazzling open clusters close together, visible to the naked eye."
+    },
+    {
+        "name": "Praesepe Cluster",
+        "designation": "M44",
+        "type": "Cluster",
+        "constellation": "Cancer",
+        "magnitude": 3.1,
+        "description": "A large, nearby open cluster also known as the Beehive Cluster."
+    },
+    {
+        "name": "Wild Duck Cluster",
+        "designation": "M11",
+        "type": "Cluster",
+        "constellation": "Scutum",
+        "magnitude": 6.3,
+        "description": "One of the most massive and compact open clusters known, appearing like a flying flock of ducks."
+    },
+    {
+        "name": "Omega Centauri",
+        "designation": "NGC 5139",
+        "type": "Cluster",
+        "constellation": "Centaurus",
+        "magnitude": 3.9,
+        "description": "The largest and brightest globular cluster in the Milky Way."
+    },
+    {
+        "name": "Jewel Box Cluster",
+        "designation": "NGC 4755",
+        "type": "Cluster",
+        "constellation": "Crux",
+        "magnitude": 4.2,
+        "description": "A young open cluster with a colorful array of supergiant stars."
+    },
+    {
+        "name": "Globular Cluster M15",
+        "designation": "M15",
+        "type": "Cluster",
+        "constellation": "Pegasus",
+        "magnitude": 6.2,
+        "description": "One of the densest globular clusters known in the Milky Way."
+    },
+    {
+        "name": "Open Cluster M35",
+        "designation": "M35",
+        "type": "Cluster",
+        "constellation": "Gemini",
+        "magnitude": 5.1,
+        "description": "A relatively large and bright open cluster easily visible in binoculars."
     }
 ]

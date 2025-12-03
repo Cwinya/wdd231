@@ -1,0 +1,106 @@
+/* New Color and Typography Variables */
+:root {
+    /* Color Schema */
+    --color-primary: #0a1930;    /* Deep Space (Dark Background/Main Text) */
+    --color-secondary: #00bcd4;  /* Cyber Teal (Highlights) */
+    --color-light: #f4f4f9;      /* Star White (Main Background/Code BG) */
+    --color-accent: #ff9800;     /* Nebula Orange (Call-to-Action/Accents) */
+
+    /* Typography Schema */
+    --font-main: 'Roboto', sans-serif;
+    --font-code: 'Space Mono', monospace;
+}
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: var(--font-main);
+    background-color: var(--color-light); /* Star White for background */
+    color: var(--color-primary); /* Deep Space for main text */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-family: var(--font-code);
+    color: var(--color-primary); /* Deep Space */
+    font-size: 2.5em;
+    letter-spacing: 2px;
+}
+
+/* Section styling */
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: var(--color-primary); /* Deep Space background for sections */
+    color: var(--color-light); /* Star White text in sections */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--color-secondary); /* Cyber Teal border */
+}
+
+h2 {
+    font-family: var(--font-code);
+    color: var(--color-secondary); /* Cyber Teal for section headings */
+    margin-bottom: 10px;
+    border-bottom: 2px solid var(--color-accent); /* Nebula Orange accent line */
+    padding-bottom: 5px;
+    font-size: 1.8em;
+}
+
+h3 {
+    font-family: var(--font-code);
+    color: var(--color-accent); /* Nebula Orange */
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.4em;
+}
+
+/* Paragraph text within sections uses the main font and light color */
+section p, section strong {
+    font-family: var(--font-main);
+    color: var(--color-light);
+}
+
+/* List styling */
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* Preformatted text for wireframes */
+pre {
+    background-color: var(--color-light); /* Star White background */
+    padding: 15px;
+    border: 1px solid var(--color-secondary);
+    font-family: monospace;
+    white-space: pre-wrap;
+    color: var(--color-primary); /* Deep Space text for readability */
+    border-radius: 6px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+}
