@@ -1,0 +1,44 @@
+/* Desktop positioning: Float the form to the right */
+@media (min-width: 900px) {
+    .hero {
+        /* Remove flex layout for positioning */
+        display: block; 
+        text-align: left;
+        padding: 5rem 5%; 
+        height: 400px; /* Give the hero a fixed height for better absolute positioning */
+    }
+    
+    .hero-content {
+        text-align: left;
+        /* Position content to the left of the form */
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        transform: translateY(-50%);
+        max-width: 50%;
+    }
+
+    .cta-login-form {
+        /* Absolute positioning on the right side of the hero */
+        position: absolute;
+        top: 50%;
+        right: 5%;
+        transform: translateY(-50%);
+        margin-top: 0;
+        z-index: 10;
+        width: 350px;
+    }
+}
+
+@media (min-width: 900px) {
+    .finder-layout {
+        grid-template-columns: 300px 1fr; /* Sidebar and main content for desktop */
+    }
+}
+
+/* 3. Large screens (>= 1024px) - 4 columns */
+@media (min-width: 1024px) {
+    .celestial-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
