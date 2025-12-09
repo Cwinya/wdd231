@@ -354,33 +354,7 @@ async function initFinder() {
 document.addEventListener('DOMContentLoaded', initFinder);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// LEARNING AND RESOURCE PAGE
 document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('celestial-cards-container');
 
@@ -446,4 +420,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     loadCelestialObjects();
+});
+
+
+// HAMBURGER MENU
+const menuToggle = document.getElementById('menu-toggle');
+const mainMenu = document.getElementById('main-menu');
+const factToggleButton = document.getElementById('toggle-facts-btn');
+
+// --- Responsive Menu Toggle ---
+menuToggle.addEventListener('click', () => {
+    const isExpanded = mainMenu.classList.toggle('nav-open');
+    menuToggle.setAttribute('aria-expanded', isExpanded);
 });

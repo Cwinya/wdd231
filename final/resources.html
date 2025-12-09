@@ -12,17 +12,21 @@
     <link rel="stylesheet" href="styles/final.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
-    <script src="scripts/final.js"></script>
+    <script src="scripts/final.js" defer></script>
 </head>
 <body>
 
     <header>
         <nav role="navigation" aria-label="Main Navigation">
             <h1>Stellar Travel</h1>
-            <ul>
+            <!-- Hamburger Menu for Mobile -->
+            <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Toggle navigation menu">
+                &#9776; <!-- Hamburger icon -->
+            </button>
+            <ul id="main-menu">
                 <li><a href="final.html">Home</a></li>
                 <li><a href="dso-finder.html">DSO Target Finder</a></li>
-                <li><a href="#" aria-current="page">Learning & Resources</a></li>
+                <li><a href="resources.html" aria-current="page">Learning & Resources</a></li>
             </ul>
         </nav>
     </header>

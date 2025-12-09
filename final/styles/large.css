@@ -42,3 +42,34 @@
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+/* === DESKTOP NAVIGATION OVERRIDE (768px+) === */
+@media (min-width: 768px) {
+    /* Hide the hamburger button */
+    .menu-toggle {
+        display: none; 
+    }
+    
+    /* Show menu horizontally (undoing mobile overlay positioning) */
+    nav ul {
+        display: flex; 
+        position: static; 
+        flex-direction: row; 
+        background-color: transparent; 
+        box-shadow: none;
+        border-top: none;
+        padding: 0;
+        gap: 20px; /* Desktop gap */
+    }
+    
+    /* Reset mobile-specific list/link styles */
+    nav ul li {
+        width: auto;
+        text-align: left;
+    }
+    nav a {
+        display: initial; /* Back to inline display */
+        width: auto;
+        margin: 0;
+    }
+}

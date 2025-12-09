@@ -19,10 +19,14 @@
     <header>
         <nav role="navigation" aria-label="Main Navigation">
             <h1>Stellar Travel</h1>
-            <ul>
-                <li><a href="#" aria-current="page">Home</a></li>
+            <!-- Hamburger Menu for Mobile -->
+            <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Toggle navigation menu">
+                &#9776; <!-- Hamburger icon -->
+            </button>
+            <ul id="main-menu">
+                <li><a href="final.html">Home</a></li>
                 <li><a href="dso-finder.html">DSO Target Finder</a></li>
-                <li><a href="resources.html">Learning & Resources</a></li>
+                <li><a href="resources.html" aria-current="page">Learning & Resources</a></li>
             </ul>
         </nav>
     </header>
