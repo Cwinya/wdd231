@@ -233,6 +233,11 @@ footer {
     z-index: 2; /* Ensure form is above the planets */
 }
 
+#reset-button{
+    background-color: #555;
+    margin-top: 10px;
+}
+
 .cta-login-form h3 {
     margin-top: 0;
     margin-bottom: 20px;
